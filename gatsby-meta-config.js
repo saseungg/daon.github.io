@@ -24,7 +24,4 @@ module.exports = {
   },
   ga: '0', // Add your google analytics tranking ID
   ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
-  comment: {
-    utterances: 'saseungg/blog', // Your repository for archive comment
-  },
 }
