@@ -1,5 +1,5 @@
 ---
-title: 'MSW로 목데이터 만들기'
+title: '👾 MSW로 목데이터 만들기'
 date: 2023-09-13 12:20:15
 category: 'project'
 draft: false
