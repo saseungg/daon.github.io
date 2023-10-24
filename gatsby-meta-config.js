@@ -3,7 +3,7 @@ module.exports = {
   description: `개발일기`,
   author: `saseungg`,
   introduction: `프론트엔드 개발자 다온!`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://daon.pro/`, // Your blog site url
   social: {
     github: `saseungg`, // Your GitHub account
   },
@@ -24,4 +24,7 @@ module.exports = {
   },
   ga: '0', // Add your google analytics tranking ID
   ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
+  comment: {
+    utterances: 'saseungg/blog', // Your repository for archive comment
+  },
 }
