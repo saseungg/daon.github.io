@@ -82,4 +82,9 @@ body.dark {
   td {
     border-bottom: 1px solid #eee;
   }
+
+  :not(pre) > code[class*='language-'] {
+    color: white;
+    box-shadow: inset 0 -0.5rem #4835b5;
+  }
 }
