@@ -1,5 +1,5 @@
 ---
-title: '👾 nvm으로 노드 버전관리 자동화하기'
+title: '📦 nvm으로 노드 버전관리 자동화하기'
 date: 2023-10-26 19:50:15
 category: 'tip'
 draft: false
@@ -64,6 +64,7 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 ```
+
 스크립트를 붙여넣었다면 `:wq` 로 저장해서 나오자.
 
 프로젝트 디렉토리로 이동하면 다음과 같은 메세지가 출력된다.
