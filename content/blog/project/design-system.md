@@ -226,7 +226,7 @@ Opacity에 관련되지 않는 컬러는 100단위로 200부터 시작하고 컬
 
 위의 디자인을 보고 각 컴포넌트에 들어가는 모든 컬러들을 `컴포넌트+속성`을 기준으로 전부 정의해 보자.
 
-```
+```shell
 text: gray400
 
 text.count: gray400
@@ -250,7 +250,7 @@ outline.select: gray50
 
 전부 정의하면 중복되는 항목들이 보이게 된다.
 
-```
+```shell
 text.primary: gray400
 
 text.secondary: black

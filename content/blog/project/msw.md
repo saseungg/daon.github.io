@@ -109,7 +109,7 @@ MSW 동작 원리를 순서도로 그려보았다. 풀어서 설명하면 아래
 ### MSW 설치
 먼저 MSW를 설치해준다.
 
-```other
+```shell
 npm install msw --save-dev
 # or
 yarn add msw --dev
@@ -121,7 +121,7 @@ MSW를 사용하려면 브라우저에 서비스 워커를 등록해야한다.
 
 아래 명령어를 실행하면 서비스 워커 등록을 위한 파일(mockServiceWorker.js)이 `public` 폴더에 추가된다.
 
-```other
+```shell
 npx msw init public/ --save
 ```
 
