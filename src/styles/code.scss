@@ -11,10 +11,6 @@
   border-left: 0.35em solid #0687f0;
 }
 
-blockquote {
-  color: $blockquote-text-color;
-}
-
 code[class*='language-'],
 pre[class*='language-'] {
   color: #e0e0e0;
@@ -27,7 +23,7 @@ pre[class*='language-'] {
   word-break: normal;
   word-wrap: normal;
   line-height: 1.6;
-  font-size: 13px;
+  font-size: 15px;
 
   -moz-tab-size: 2;
   -o-tab-size: 2;
