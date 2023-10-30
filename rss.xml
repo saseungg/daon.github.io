@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Daon's Dev Log]]></title><description><![CDATA[개발일기]]></description><link>https://daon.pro</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 28 Oct 2023 14:44:12 GMT</lastBuildDate><item><title><![CDATA[📦 nvm으로 노드 버전관리 자동화하기]]></title><description><![CDATA[nvm으로 프로젝트 노드 버전 관리를 하고 있다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Daon's Dev Log]]></title><description><![CDATA[개발일기]]></description><link>https://daon.pro</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Oct 2023 12:27:42 GMT</lastBuildDate><item><title><![CDATA[🤖 Github Actions을 통한 배포 자동화]]></title><description><![CDATA[Github Actions는 워크플로를 자동화하는 도구로, YAML 파일을 사용하여 빌드, 테스트, 배포 등 다양한 작업을 자동화할 수 있다. 블로그를 gh-pages로 배포했지만 글을 작성할 때마다 npm deploy…]]></description><link>https://daon.pro/tip/github-action/</link><guid isPermaLink="false">https://daon.pro/tip/github-action/</guid><pubDate>Mon, 30 Oct 2023 13:04:30 GMT</pubDate><content:encoded>&lt;p&gt;Github Actions는 워크플로를 자동화하는 도구로, YAML 파일을 사용하여 빌드, 테스트, 배포 등 다양한 작업을 자동화할 수 있다.&lt;/p&gt;
+&lt;p&gt;블로그를 gh-pages로 배포했지만 글을 작성할 때마다 npm deploy를 매번 입력해주는게 번거로웠기 때문에 Github Actions를 통해 배포 과정을 자동화하기로 했다.&lt;/p&gt;
+&lt;h2 id=&quot;워크플로-등록&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C-%EB%93%B1%EB%A1%9D&quot; aria-label=&quot;워크플로 등록 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;워크플로 등록&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;github/workflows&lt;/code&gt; 폴더에 &lt;code class=&quot;language-text&quot;&gt;deploy.yml&lt;/code&gt; 파일을 추가하여 워크 플로우를 등록하자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; build gatsby &lt;span class=&quot;token comment&quot;&gt;# 워크플로 이름&lt;/span&gt;
+
+&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; main&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Github Actions는 저장소에 이벤트가 발생할 때 워크플로를 실행할 수 있게 해준다. main 브랜치에 푸시하면 워크플로를 실행하도록 설정했다.&lt;/p&gt;
+&lt;h3 id=&quot;작업-정의&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EC%97%85-%EC%A0%95%EC%9D%98&quot; aria-label=&quot;작업 정의 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작업 정의&lt;/h3&gt;
+&lt;p&gt;워크플로 내에서 실행할 작업을 정의해보자. 이벤트가 트리거되면 jobs에 정의한 작업들이 순차적으로 실행된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;build_gatsby&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; build
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v1
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/setup&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;node@v2
+        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;token key atrule&quot;&gt;node-version&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;14.15.0&apos;&lt;/span&gt;
+
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Install dependencies
+        &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; npm install
+
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Build
+        &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; npm run build
+
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v2
+        &lt;span class=&quot;token key atrule&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 환경 변수 설정&lt;/span&gt;
+          &lt;span class=&quot;token key atrule&quot;&gt;GITHUB_TOKEN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; secrets.GH_TOKEN &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token key atrule&quot;&gt;PUBLISH_BRANCH&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; deployment
+          &lt;span class=&quot;token key atrule&quot;&gt;PUBLISH_DIR&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ./public&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;runs-on은 Github에서 호스팅되는 가상 환경을 의미한다. 이 레포는 ubuntu-latest 환경에서 실행된다.&lt;/li&gt;
+&lt;li&gt;워크플로에서 레포에 있는 코드를 사용할 때 체크아웃을 작업을 해줘야하기 때문에 &lt;code class=&quot;language-text&quot;&gt;actions/checkout&lt;/code&gt; 액션을 사용해서 코드를 가져온다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;actions/setup-node&lt;/code&gt;를 사용하여 Node.js 버전을 설치한다. 로컬 프로젝트 노드 버전과 동일하게 기재해주자.&lt;/li&gt;
+&lt;li&gt;종속성을 설치하고, Gatsby 프로젝트를 빌드하고, 배포를 위해 &lt;code class=&quot;language-text&quot;&gt;peaceiris/actions-gh-pages@v2&lt;/code&gt; 액션을 사용한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이러한 과정들을 시각화를 해보았다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAe0rUsmSwv8A/8QAGRAAAwADAAAAAAAAAAAAAAAAAAECAxNB/9oACAEBAAEFAljlVrgmVKOn/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAS/9oACAEDAQE/AZC//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAQUBAAAAAAAAAAAAAAAAABEgITFBof/aAAgBAQAGPwJdK6Qz/8QAHBAAAwABBQAAAAAAAAAAAAAAAAERcRAhMYGh/9oACAEBAAE/IYKn2HTf2JRYs6YC4P/aAAwDAQACAAMAAAAQrN//xAAXEQEBAQEAAAAAAAAAAAAAAAABACFh/9oACAEDAQE/EOMAYX//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QgX//xAAeEAEBAAIABwAAAAAAAAAAAAABEQAhEDFBUXGB4f/aAAgBAQABPxBiYlbXXnrKonep5UxGxTv3wRKV5v3Haz//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;workflow&quot;
+        title=&quot;workflow&quot;
+        src=&quot;/static/e09ab8bdeef4a1b5128365658e8626df/e5166/workflow.jpg&quot;
+        srcset=&quot;/static/e09ab8bdeef4a1b5128365658e8626df/f93b5/workflow.jpg 300w,
+/static/e09ab8bdeef4a1b5128365658e8626df/b4294/workflow.jpg 600w,
+/static/e09ab8bdeef4a1b5128365658e8626df/e5166/workflow.jpg 1200w,
+/static/e09ab8bdeef4a1b5128365658e8626df/9f3a0/workflow.jpg 1706w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;정리하자면, 이벤트가 트리거되는 순간 build gatsby라는 이름의 워크플로가 실행이 되며, ubuntu-latest 환경에서 step 1 -&gt; step 2 … 단계별로 실행하며 gh-pages로 배포가 된 후 deployment 브랜치에 푸쉬된다.&lt;/p&gt;
+&lt;h2 id=&quot;환경-변수-등록&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-%EB%93%B1%EB%A1%9D&quot; aria-label=&quot;환경 변수 등록 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;환경 변수 등록&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Settings &gt; Security &gt; Secrets and variables &gt; actions&lt;/code&gt; 에서 환경 변수를 등록 해준다.&lt;/p&gt;
+&lt;p&gt;key는 yml에서 지정한 환경 변수 이름과 똑같이 GH_TOKEN으로 하고 value에 토큰 값을 입력해주고 저장하면 된다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 20.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAG8AD//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAEBAQAAAAAAAAAAAAAAAAABABD/2gAIAQEAAT8hCc//2gAMAwEAAgADAAAAEHPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAFRABAQAAAAAAAAAAAAAAAAAAAQD/2gAIAQEAAT8QIWEX/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;secret variables&quot; title=&quot;secret variables&quot; src=&quot;/static/a9bdddc9a0c1ae779c544e0bb2f4919a/e5166/secrets%20variables.jpg&quot; srcset=&quot;/static/a9bdddc9a0c1ae779c544e0bb2f4919a/f93b5/secrets%20variables.jpg 300w,
+/static/a9bdddc9a0c1ae779c544e0bb2f4919a/b4294/secrets%20variables.jpg 600w,
+/static/a9bdddc9a0c1ae779c544e0bb2f4919a/e5166/secrets%20variables.jpg 1200w,
+/static/a9bdddc9a0c1ae779c544e0bb2f4919a/179bc/secrets%20variables.jpg 1304w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
+&lt;/p&gt;</content:encoded></item><item><title><![CDATA[📦 nvm으로 노드 버전관리 자동화하기]]></title><description><![CDATA[nvm으로 프로젝트 노드 버전 관리를 하고 있다.
 하지만 프로젝트를 새롭게 낄 때마다 node를 재설정해줘야 되서 너무 불편했다.
 그래서 프로젝트로 진입했을 때 지정한 노드버전으로 해줄 방법을 찾다가 알게된 방법을 공유하고자 한다. nvm…]]></description><link>https://daon.pro/tip/node-version/</link><guid isPermaLink="false">https://daon.pro/tip/node-version/</guid><pubDate>Thu, 26 Oct 2023 19:50:15 GMT</pubDate><content:encoded>&lt;p&gt;nvm으로 프로젝트 노드 버전 관리를 하고 있다.
 하지만 프로젝트를 새롭게 낄 때마다 node를 재설정해줘야 되서 너무 불편했다.
