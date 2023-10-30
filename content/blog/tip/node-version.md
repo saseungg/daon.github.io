@@ -26,7 +26,7 @@ $ echo "14.15.0" > .nvmrc
 ```
 
 <p align="center">
-  <img width="830" alt="node-version" src="https://github.com/saseungg/saseungg/assets/115215178/78820740-8ec0-4ba3-83b1-09814a54307b">
+  <img width="830" alt="node-version" src="./images/node-version/node-version.png">
 </p>
 
 ## 자동화 스크립트 작성
@@ -80,31 +80,31 @@ load-nvmrc
 
 ## 기타 nvm 관련 명령어
 
-`node 버전 설치`
+node 버전 설치
 
 ```
 $ nvm install {version}
 ```
 
-`버전 적용`
+버전 적용
 
 ```shell
 $ nvm use {version}
 ```
 
-`현재 디렉토리 노드 버전 확인`
+현재 디렉토리 노드 버전 확인
 
 ```shell
 $ nvm current
 ```
 
-`컴퓨터 설치된 노드 버전 확인`
+컴퓨터 설치된 노드 버전 확인
 
 ```shell
 $ nvm ls
 ```
 
-`default 버전 등록`
+default 버전 등록
 
 ```shell
 $ nvm alias default {version}
