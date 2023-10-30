@@ -1,7 +1,7 @@
 ---
 title: '📦 nvm으로 노드 버전관리 자동화하기'
 date: 2023-10-26 19:50:15
-category: 'tip'
+category: 'Tip'
 draft: false
 ---
 

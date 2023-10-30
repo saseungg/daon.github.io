@@ -1,7 +1,7 @@
 ---
 title: '✨ 이미지 업로드 성능 최적화: 브라우저 내 이미지 리사이징'
 date: 2023-10-22 12:20:15
-category: 'project'
+category: 'Project'
 draft: false
 ---
 
