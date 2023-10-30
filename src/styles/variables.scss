@@ -21,7 +21,8 @@ $light-gray: #aaa;
 // blog-templates
 $navigator-text-color: #cc007a;
 $navigator-background-color: #fceff7;
-$blockquote-text-color: #999;
+$blockquote-text-color: #b3b3b3;
+$light-blockquote-quote-image: url('/images/quote-black.png');
 
 // category
 $light-category-border-color: #ecf0f2;
@@ -43,6 +44,7 @@ $dark-middle-font-color: #d8d7d7;
 
 $dark-text-shadow: 0 0 0.1px rgba(255, 255, 255, 0.3);
 $dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+$dark-blockquote-quote-image: url('/images/quote-white.png');
 
 $dark-category-item-color: #282c35;
 $dark-category-background-color: #24272c;
