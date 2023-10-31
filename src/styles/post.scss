@@ -1,10 +1,13 @@
+@import './variables.scss';
+
 blockquote {
   position: relative;
   margin-top: 12px;
   padding: 12px 8px 0px 36px;
 
   border-left: none;
-  font-family: Pretendard;
+  font-weight: 400;
+
 
   &::before {
     position: absolute;
@@ -12,7 +15,7 @@ blockquote {
     left: 4px;
     display: inline-block;
     background-size: contain;
-    opacity: 0.15;
+    opacity: 0.2;
     width: 20px;
     height: 20px;
     z-index: 1;

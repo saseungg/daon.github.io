@@ -64,7 +64,6 @@ body.dark {
 
   // post
   blockquote {
-    color: $blockquote-text-color;
     &::before {
       background-image: $dark-blockquote-quote-image;
     }

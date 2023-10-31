@@ -70,7 +70,6 @@ body.light {
   }
 
   blockquote {
-    color: $blockquote-text-color;
     &::before {
       background-image: $light-blockquote-quote-image;
     }
