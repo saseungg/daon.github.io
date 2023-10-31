@@ -34,12 +34,12 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h3: {
-      fontWeight: 500,
+      fontWeight: 600,
       fontFamily: 'Pretendard',
     },
 
     h4: {
-      fontWeight: 500,
+      fontWeight: 600,
       fontSize: '17px',
       fontFamily: 'Pretendard',
     },
