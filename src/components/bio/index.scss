@@ -2,6 +2,7 @@
 
 .bio {
   margin-bottom: 24px;
+  text-shadow: $text-shadow;
 
   .author-description {
     display: flex;
@@ -33,7 +34,6 @@
     margin-top: 4px;
     font-size: 80%;
     line-height: 1.4;
-    text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
   }
 
   .author-socials {
