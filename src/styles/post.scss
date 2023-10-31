@@ -7,6 +7,8 @@ blockquote {
 
   border-left: none;
   font-weight: 400;
+  filter: opacity(0.5) drop-shadow(0 0 0 #ea00ff);
+  
 
 
   &::before {
@@ -15,7 +17,7 @@ blockquote {
     left: 4px;
     display: inline-block;
     background-size: contain;
-    opacity: 0.2;
+    opacity: 0.3;
     width: 20px;
     height: 20px;
     z-index: 1;

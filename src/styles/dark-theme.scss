@@ -67,11 +67,10 @@ body.dark {
     &::before {
       background-image: $dark-blockquote-quote-image;
     }
-  }
 
-  h1,
-  h2 {
-    border-bottom-color: rgba(255, 255, 255, 0.3);
+    p {
+      color: rgb(133, 133, 133);
+    }
   }
 
   .navigator {
