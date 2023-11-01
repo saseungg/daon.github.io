@@ -6,10 +6,10 @@ blockquote {
   padding: 12px 8px 0px 36px;
 
   border-left: none;
-  font-weight: 400;
 
-  
-
+  p {
+    color: #999999;
+  }
 
   &::before {
     position: absolute;
@@ -17,11 +17,10 @@ blockquote {
     left: 4px;
     display: inline-block;
     background-size: contain;
-    opacity: 0.3;
+    opacity: 0.2;
     width: 20px;
     height: 20px;
     z-index: 1;
     content: '';
-    filter: opacity(0.5) drop-shadow(0 0 0 #ea00ff);
   }
 }
