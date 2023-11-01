@@ -52,7 +52,7 @@ export const ThemeSwitch = () => {
           width={48}
           checkedIcon={<div className="icon checkedIcon">D</div>}
           uncheckedIcon={<div className="icon uncheckedIcon">L</div>}
-          offColor={'#d9dfe2'}
+          offColor={'#e6e6e6'}
           offHandleColor={'#fff'}
           onColor={'#999'}
           onHandleColor={'#282c35'}

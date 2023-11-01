@@ -63,7 +63,7 @@ pre[class*='language-'] {
   white-space: normal;
   background: $inline-dimmed-color;
   color: $inline-text-color;
-  border: 1px dashed $inline-text-color;
+  border: 1px dashed;
   font-weight: 500;
   font-family: 'Open Sans';
 }
