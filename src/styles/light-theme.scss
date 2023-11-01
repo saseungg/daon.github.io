@@ -73,9 +73,5 @@ body.light {
     &::before {
       background-image: $light-blockquote-quote-image;
     }
-
-    p {
-      color: #69447c;
-    }
   }
 }

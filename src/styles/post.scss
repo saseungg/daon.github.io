@@ -7,7 +7,7 @@ blockquote {
 
   border-left: none;
   font-weight: 400;
-  filter: opacity(0.5) drop-shadow(0 0 0 #ea00ff);
+
   
 
 
@@ -22,5 +22,6 @@ blockquote {
     height: 20px;
     z-index: 1;
     content: '';
+    filter: opacity(0.5) drop-shadow(0 0 0 #ea00ff);
   }
 }
