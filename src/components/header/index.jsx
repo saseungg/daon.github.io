@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import './index.scss'
+import { ThemeSwitch } from '../theme-switch'
 
-export const Header = ({ title, location, rootPath }) => {
-  const isRoot = location.pathname === rootPath
+export const Header = ({ title }) => {
   return (
-    isRoot && (
-      <h1 className="home-header">
-        <Link to={`/`} className="link">
+    <div className="header-container">
+      <div className="header">
+        <Link to={`/`} className="home-nav">
           {title}
         </Link>
-      </h1>
-    )
+        <ThemeSwitch />
+      </div>
+    </div>
   )
 }

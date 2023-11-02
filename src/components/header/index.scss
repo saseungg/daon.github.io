@@ -1,14 +1,37 @@
-.home-header {
-  margin-top: 0;
-  border-bottom: none;
-  font-family: 'Catamaran';
-  font-weight: 900;
-  font-size: 48px;
-  letter-spacing: -2px;
-}
+@import '../../styles/variables.scss';
 
-.link {
-  box-shadow: none;
-  text-decoration: none;
-  color: inherit;
+.header-container {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 663px;
+    width: 100%;
+    font-family: GmarketSansBold;
+    font-weight: 700;
+  }
+
+  .home-nav {
+    display: inline-block;
+    font-size: 17px;
+    padding-top: 8px;
+    color: #000080;
+  }
 }
