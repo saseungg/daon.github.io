@@ -2,9 +2,8 @@
 
 .thumbnail {
   display: block;
-  margin-bottom: 12px;
   padding: 4px;
-  padding-bottom: 12px;
+  padding: 26px 0;
   box-shadow: none;
   transition: text-shadow 0.3s, opacity 0.4s;
   opacity: 0;
@@ -13,8 +12,24 @@
     font-size: 90%;
     line-height: 1.4;
   }
+
+  h3 {
+    margin-top: 0;
+  }
 }
 
 .thumbnail.visible {
   opacity: 1;
+}
+
+.thumbnail-subinfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.subinfo-box {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }

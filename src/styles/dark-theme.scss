@@ -49,6 +49,7 @@ body.dark {
     }
   }
 
+  // thumbnail
   .thumbnail {
     border-bottom: 1px solid $dark-thumbnail-border-color;
     h3 {
@@ -67,6 +68,15 @@ body.dark {
     }
   }
 
+  .thumbnail-subinfo {
+    color: $dark-middle-font-color;
+
+    .subinfo-box-icon {
+      stroke: $dark-middle-font-color;
+    }
+  }
+
+  // footer
   .footer {
     color: $dark-middle-font-color;
     a {

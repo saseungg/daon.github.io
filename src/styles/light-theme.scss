@@ -48,6 +48,7 @@ body.light {
     }
   }
 
+  // thumbnail
   .thumbnail {
     border-bottom: 1px solid $light-thumbnail-border-color;
     h3 {
@@ -66,6 +67,15 @@ body.light {
     }
   }
 
+  .thumbnail-subinfo {
+    color: $light-middle-font-color;
+
+    .subinfo-box-icon {
+      stroke: $light-middle-font-color;
+    }
+  }
+
+  // footer
   .footer {
     color: $light-footer-font-color;
     a {
