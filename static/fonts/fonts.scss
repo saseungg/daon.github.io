@@ -16,7 +16,6 @@
   font-display: block;
 }
 
-
 @font-face {
   font-family: 'Pretendard';
   src: local('Pretendard');
@@ -25,7 +24,6 @@
   font-style: normal;
   font-display: block;
 }
-
 
 @font-face {
   font-family: 'Pretendard';
@@ -43,4 +41,11 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: swap;
 }
