@@ -1,58 +1,74 @@
-// app
-$theme-gradient: linear-gradient(45deg, #D57EEB, #9999ff, #A679FF);
+//* all
+
+// header
+$theme-gradient: linear-gradient(45deg, #d57eeb, #9999ff, #a679ff);
 $top-header-text-color: #fff;
 
-/**
- * @light theme
- */
-
-// body
+// text-shadow
 $text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
-$light-background-color: #fff;
-$light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 
-// index
-$dimmed-color: #eef5db;
-$light-link-background-color: #ecf0f2;
-$light-link-color: #000080;
-$dark-gray: #333;
-$middle-gray: #7d7d7d;
-$light-gray: #aaa;
-
-// blog-templates
+// navigator
 $navigator-text-color: #cc007a;
 $navigator-background-color: #fceff7;
-$light-blockquote-quote-image: url('/images/quote-black.png');
 
-// inline-code
-$inline-shadow-color: #FFEDBC;
+//* light-theme
 
-// category
+// body
+$light-background-color: #fff;
+
+// font
+$light-font-color: #333;
+$light-middle-font-color: #7d7d7d;
+$light-footer-font-color: #aaa;
+
+// hover
+$light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+// author, category
+$light-link-color: #000080;
 $light-category-border-color: #ecf0f2;
 $light-category-highlight-border-color: #909da1;
-$light-category-background-color: #f4f7f8;
-$light-category-text-color: #666;
 $light-category-highlight-text-color: #636c6e;
 $light-category-item-color: #fff;
+$light-category-text-color: #666;
+$light-category-background-color: #f4f7f8;
 
-/**
- * @dark theme
- */
+// thumbnail
+$light-thumbnail-border-color: #ecf0f2;
+
+// inline-code
+$light-inline-shadow-color: #ffedbc;
+
+// blockquote
+$light-blockquote-quote-image: url('/images/quote-black.png');
+
+//* dark-theme
+
+// body
 $dark-background-color: #282c35;
-$dark-link-color: #bb72ec;
 
-$dark-lightest-font-color: #fff;
-$dark-light-font-color: #eeeeee;
+// font
+$dark-font-color: #eeeeee;
 $dark-middle-font-color: #d8d7d7;
+$dark-footer-font-color: #fff;
 
+// hover
 $dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
-$dark-blockquote-quote-image: url('/images/quote-white.png');
 
-$dark-category-item-color: #282c35;
-$dark-category-background-color: #24272c;
-
+// author, category
+$dark-link-color: #bb72ec;
 $dark-category-border-color: rgb(56, 54, 54);
-$dark-category-text-color: #d8d7d7;
-
 $dark-category-highlight-border-color: #666;
 $dark-category-highlight-text-color: #fff;
+$dark-category-item-color: #282c35;
+$dark-category-text-color: #d8d7d7;
+$dark-category-background-color: #24272c;
+
+// thumbnail
+$dark-thumbnail-border-color: rgb(56, 54, 54);
+
+// inline-code
+$dark-inline-shadow-color: #4c39b0;
+
+// blockquote
+$dark-blockquote-quote-image: url('/images/quote-white.png');

@@ -57,11 +57,9 @@ pre[class*='language-'] {
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: .1em .3em;
+  padding: 0.1em 0.3em;
   white-space: normal;
-  box-shadow: inset 0 -0.5rem $inline-shadow-color;
   background: transparent;
-  color: black;
   font-weight: 600;
   font-family: 'Open Sans';
 }
