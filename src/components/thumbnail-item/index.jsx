@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { TARGET_CLASS } from '../../utils/visible'
-import { CategoryIcon } from './category-icon'
-import { DateIcon } from './date-icon'
+import { CategoryIcon } from './icon/category-icon'
+import { DateIcon } from './icon/date-icon'
 import './index.scss'
 
 export const ThumbnailItem = ({ node }) => (
