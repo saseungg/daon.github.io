@@ -8,7 +8,7 @@ import './index.scss'
 export const ThumbnailItem = ({ node }) => (
   <Link className={`thumbnail ${TARGET_CLASS}`} to={node.fields.slug}>
     <div key={node.fields.slug} className="thumbnail-text">
-      <h3>{node.frontmatter.title || node.fields.slug}</h3>
+      <p className='title'>{node.frontmatter.title || node.fields.slug}</p>
       <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
 
       <div className="thumbnail-subinfo">

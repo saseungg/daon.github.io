@@ -47,7 +47,7 @@ body.light {
   // thumbnail
   .thumbnail {
     border-bottom: 1px solid $light-thumbnail-border-color;
-    h3 {
+    .title {
       color: $light-font-color;
     }
     p {
