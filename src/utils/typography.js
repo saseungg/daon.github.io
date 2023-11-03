@@ -22,6 +22,7 @@ GitHubTheme.overrideThemeStyles = () => {
       fontSize: '30px',
       fontFamily: 'GmarketSansMedium',
       paddingBottom: '10px',
+      border: 'none',
     },
 
     h2: {
