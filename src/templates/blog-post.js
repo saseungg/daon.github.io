@@ -34,7 +34,9 @@ export default ({ data, pageContext, location }) => {
       <PostTitle title={postTitle} />
       <PostDate date={date} />
       <PostContainer html={post.html} />
-      <Bio />
+      <div className="bio-container">
+        <Bio />
+      </div>
       <PostNavigator pageContext={pageContext} />
       {!!disqusShortName && (
         <Disqus
