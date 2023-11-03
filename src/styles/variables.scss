@@ -12,8 +12,11 @@ $navigator-background-color: #f7f8fa;
 // body
 $light-background-color: #fff;
 $light-font-color: black;
-$dark-font-color: white;
 
+// post-nav
+$light-card-background-color: #f7f8fa;
+$light-card-hover-background-color: #eeeff1;
+$light-direction-color: #989ba0;
 
 // font
 $light-middle-font-color: #7d7d7d;
@@ -48,6 +51,12 @@ $light-blockquote-quote-image: url('/images/quote-black.png');
 
 // body
 $dark-background-color: #282c35;
+$dark-font-color: white;
+
+// post-nav
+$dark-card-background-color: #2c2d2e;
+$dark-card-hover-background-color: #3c3d40;
+$dark-direction-color: #8e8f97;
 
 // header
 $dark-header-color: white;
