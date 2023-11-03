@@ -1,5 +1,4 @@
 import React, { useCallback, useRef } from 'react'
-import { rhythm } from '../../utils/typography'
 import './index.scss'
 import { Item } from './item'
 
@@ -18,14 +17,11 @@ export const Category = ({ categories, category, selectCategory }) => {
   }, [containerRef])
 
   return (
-    <ul
+    <div
       ref={containerRef}
       className="category-container"
       role="tablist"
       id="category"
-      style={{
-        margin: `0 -${rhythm(3 / 4)}`,
-      }}
     >
       <Item title={'All'} selectedCategory={category} onClick={selectCategory} scrollToCenter={scrollToCenter} />
       {categories.map((title, idx) => (
@@ -37,6 +33,6 @@ export const Category = ({ categories, category, selectCategory }) => {
           scrollToCenter={scrollToCenter}
         />
       ))}
-    </ul>
+    </div>
   )
 }
