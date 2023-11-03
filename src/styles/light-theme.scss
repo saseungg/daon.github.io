@@ -9,7 +9,7 @@ body.light {
       color: $light-middle-font-color;
     }
     a {
-      color: $light-link-color;
+      color: $light-color;
     }
   }
 
@@ -40,7 +40,7 @@ body.light {
   .navigator {
     a {
       background-color: $navigator-background-color;
-      color: $navigator-text-color;
+      color: $light-color;
     }
   }
 
@@ -48,7 +48,7 @@ body.light {
   .thumbnail {
     border-bottom: 1px solid $light-thumbnail-border-color;
     .title {
-      color: $light-font-color;
+      color: $light-color;
     }
     p {
       color: $light-middle-font-color;
@@ -74,10 +74,10 @@ body.light {
   // header
   .header {
     a {
-      color: $light-font-color;
+      color: $light-color;
     }
     svg {
-      fill: $light-font-color;
+      fill: $light-color;
     }
   }
 
@@ -85,7 +85,7 @@ body.light {
   .footer {
     color: $light-footer-font-color;
     a {
-      color: $light-font-color;
+      color: $light-color;
     }
   }
 
@@ -112,7 +112,7 @@ body.light {
       color: $light-direction-color;
     }
     .title {
-      color: $light-font-color;
+      color: $light-color;
     }
   }
 }

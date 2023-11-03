@@ -4,14 +4,13 @@
 $text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
 
 // navigator
-$navigator-text-color: black;
 $navigator-background-color: #f7f8fa;
 
 //* light-theme
 
 // body
 $light-background-color: #fff;
-$light-font-color: black;
+$light-color: black;
 
 // post-nav
 $light-card-background-color: #f7f8fa;
@@ -26,7 +25,6 @@ $light-footer-font-color: #aaa;
 $light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 
 // author, category
-$light-link-color: #000080;
 $light-category-border-color: #ecf0f2;
 $light-category-highlight-border-color: #909da1;
 $light-category-highlight-text-color: #636c6e;
@@ -51,7 +49,7 @@ $light-blockquote-quote-image: url('/images/quote-black.png');
 //* dark-theme
 // body
 $dark-background-color: #292a2d;
-$dark-font-color: white;
+$dark-color: white;
 
 // post-nav
 $dark-card-background-color: #323232;
@@ -70,7 +68,6 @@ $dark-footer-font-color: #fff;
 $dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
 
 // author, category
-$dark-link-color: #bb72ec;
 $dark-category-border-color: rgb(56, 54, 54);
 $dark-category-highlight-border-color: #666;
 $dark-category-highlight-text-color: #fff;
