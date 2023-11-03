@@ -2,10 +2,6 @@ body.dark {
   background-color: $dark-background-color;
   color: $dark-font-color;
 
-  .home-header {
-    color: $dark-font-color;
-  }
-
   .bio {
     .author-name-content {
       background-color: $dark-category-border-color;
@@ -52,7 +48,7 @@ body.dark {
   // thumbnail
   .thumbnail {
     border-bottom: 1px solid $dark-thumbnail-border-color;
-    h3 {
+    title {
       color: $dark-font-color;
     }
     p {
@@ -73,6 +69,16 @@ body.dark {
 
     .subinfo-box-icon {
       stroke: $dark-middle-font-color;
+    }
+  }
+
+  // header
+  .header {
+    a {
+      color: $dark-font-color;
+    }
+    svg {
+      fill: $dark-font-color;
     }
   }
 
@@ -105,4 +111,18 @@ body.dark {
     color: white;
     box-shadow: inset 0 -0.5rem $dark-inline-shadow-color;
   }
+
+    // post-nav
+    .post-card {
+      background-color: $dark-card-background-color;
+      &:hover {
+        background-color: $dark-card-hover-background-color;
+      }
+      .direction {
+        color: $dark-direction-color;
+      }
+      .title {
+        color: $dark-font-color;
+      }
+    }
 }

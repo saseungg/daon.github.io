@@ -1,23 +1,24 @@
 //* all
 
-// header
-$theme-gradient: linear-gradient(45deg, #d57eeb, #9999ff, #a679ff);
-$top-header-text-color: #fff;
-
 // text-shadow
 $text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
 
 // navigator
-$navigator-text-color: #cc007a;
-$navigator-background-color: #fceff7;
+$navigator-text-color: black;
+$navigator-background-color: #f7f8fa;
 
 //* light-theme
 
 // body
 $light-background-color: #fff;
+$light-font-color: black;
+
+// post-nav
+$light-card-background-color: #f7f8fa;
+$light-card-hover-background-color: #eeeff1;
+$light-direction-color: #989ba0;
 
 // font
-$light-font-color: #333;
 $light-middle-font-color: #7d7d7d;
 $light-footer-font-color: #aaa;
 
@@ -33,6 +34,10 @@ $light-category-item-color: #fff;
 $light-category-text-color: #666;
 $light-category-background-color: #f4f7f8;
 
+// post-nav
+$light-nav-color: #f7f8fa;
+$light-nav-direction-color: #989ba0;
+
 // thumbnail
 $light-thumbnail-border-color: #ecf0f2;
 
@@ -42,10 +47,19 @@ $light-inline-shadow-color: #ffedbc;
 // blockquote
 $light-blockquote-quote-image: url('/images/quote-black.png');
 
-//* dark-theme
 
+//* dark-theme
 // body
-$dark-background-color: #282c35;
+$dark-background-color: #292a2d;
+$dark-font-color: white;
+
+// post-nav
+$dark-card-background-color: #323232;
+$dark-card-hover-background-color: #3c3d40;
+$dark-direction-color: #8e8f97;
+
+// header
+$dark-header-color: white;
 
 // font
 $dark-font-color: #eeeeee;

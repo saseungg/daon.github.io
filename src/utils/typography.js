@@ -18,18 +18,18 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h1: {
-      fontWeight: 700,
       lineHeight: 1.2,
-      fontFamily: 'Pretendard',
+      fontSize: '30px',
+      fontFamily: 'GmarketSansMedium',
       paddingBottom: '10px',
     },
 
     h2: {
-      fontWeight: 600,
       lineHeight: 1.2,
+      fontSize: '23px',
       marginTop: '56px',
       marginBottom: '20px',
-      fontFamily: 'Pretendard',
+      fontFamily: 'GmarketSansMedium',
       paddingBottom: '10px',
     },
 

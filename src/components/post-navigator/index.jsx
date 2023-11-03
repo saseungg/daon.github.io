@@ -7,21 +7,27 @@ export const PostNavigator = ({ pageContext }) => {
   const { previous, next } = pageContext
 
   return (
-    <ul className="navigator">
-      <li>
+    <div className="navigator-container">
+      <div>
         {previous && (
-          <Link to={previous.fields.slug} rel="prev">
-            ← {previous.frontmatter.title}
-          </Link>
+          <div className="post-card prev">
+            <Link to={previous.fields.slug} rel="prev">
+              <div className="direction">이전 글</div>
+              <div className="title">{previous.frontmatter.title}</div>
+            </Link>
+          </div>
         )}
-      </li>
-      <li>
+      </div>
+      <div>
         {next && (
-          <Link to={next.fields.slug} rel="next">
-            {next.frontmatter.title} →
-          </Link>
+          <div className="post-card next">
+            <Link to={next.fields.slug} rel="next">
+              <div className="direction">다음 글</div>
+              <div className="title">{next.frontmatter.title}</div>
+            </Link>
+          </div>
         )}
-      </li>
-    </ul>
+      </div>
+    </div>
   )
 }
