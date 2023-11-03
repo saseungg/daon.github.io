@@ -1,10 +1,8 @@
-.switch-container {
-  text-align: right;
+.move {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
 
-  .icon {
-    text-align: center;
-    color: #222;
-    font-size: 14px;
-    font-weight: 900;
-  }
+.shrink-and-fade-out {
+  transform: scale(0.8);
+  opacity: 0;
 }
