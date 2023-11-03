@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './index.scss'
 import { ThemeSwitch } from '../theme-switch'
+
+import './index.scss'
 
 export const Header = ({ title }) => {
   return (

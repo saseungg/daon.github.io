@@ -72,12 +72,13 @@ body.light {
   }
 
   // header
-  .home-nav {
-    color: $light-header-color;
-  }
-
-  .sun-icon {
-    fill: $light-header-color;
+  .header {
+    a {
+      color: $light-font-color;
+    }
+    svg {
+      fill: $light-font-color;
+    }
   }
 
   // footer

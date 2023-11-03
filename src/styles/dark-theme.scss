@@ -73,12 +73,13 @@ body.dark {
   }
 
   // header
-  .home-nav {
-    color: $dark-header-color;
-  }
-
-  .moon-icon {
-    fill: $dark-header-color;
+  .header {
+    a {
+      color: $dark-font-color;
+    }
+    svg {
+      fill: $dark-font-color;
+    }
   }
 
   // footer

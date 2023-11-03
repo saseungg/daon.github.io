@@ -11,12 +11,11 @@ $navigator-background-color: #f7f8fa;
 
 // body
 $light-background-color: #fff;
+$light-font-color: black;
+$dark-font-color: white;
 
-// header
-$light-header-color: black;
 
 // font
-$light-font-color: #333;
 $light-middle-font-color: #7d7d7d;
 $light-footer-font-color: #aaa;
 
@@ -31,6 +30,10 @@ $light-category-highlight-text-color: #636c6e;
 $light-category-item-color: #fff;
 $light-category-text-color: #666;
 $light-category-background-color: #f4f7f8;
+
+// post-nav
+$light-nav-color: #f7f8fa;
+$light-nav-direction-color: #989ba0;
 
 // thumbnail
 $light-thumbnail-border-color: #ecf0f2;
