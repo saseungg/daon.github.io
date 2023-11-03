@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
-import * as Elements from '../components/elements'
 import { Layout } from '../layout'
 import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
@@ -35,7 +34,6 @@ export default ({ data, pageContext, location }) => {
       <PostTitle title={postTitle} />
       <PostDate date={date} />
       <PostContainer html={post.html} />
-      <Elements.Hr />
       <Bio />
       <PostNavigator pageContext={pageContext} />
       {!!disqusShortName && (
