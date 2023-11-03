@@ -1,9 +1,5 @@
 //* all
 
-// header
-$theme-gradient: linear-gradient(45deg, #d57eeb, #9999ff, #a679ff);
-$top-header-text-color: #fff;
-
 // text-shadow
 $text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
 
@@ -15,6 +11,9 @@ $navigator-background-color: #fceff7;
 
 // body
 $light-background-color: #fff;
+
+// header
+$light-header-color: black;
 
 // font
 $light-font-color: #333;
@@ -46,6 +45,9 @@ $light-blockquote-quote-image: url('/images/quote-black.png');
 
 // body
 $dark-background-color: #282c35;
+
+// header
+$dark-header-color: white;
 
 // font
 $dark-font-color: #eeeeee;

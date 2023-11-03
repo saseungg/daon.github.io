@@ -71,6 +71,15 @@ body.light {
     }
   }
 
+  // header
+  .home-nav {
+    color: $light-header-color;
+  }
+
+  .sun-icon {
+    fill: $light-header-color;
+  }
+
   // footer
   .footer {
     color: $light-footer-font-color;

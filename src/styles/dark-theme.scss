@@ -72,6 +72,15 @@ body.dark {
     }
   }
 
+  // header
+  .home-nav {
+    color: $dark-header-color;
+  }
+
+  .moon-icon {
+    fill: $dark-header-color;
+  }
+
   // footer
   .footer {
     color: $dark-middle-font-color;
