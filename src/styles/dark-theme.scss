@@ -4,7 +4,7 @@ body.dark {
 
   .bio {
     .author-name-content {
-      background-color: gray;
+      background-color: $dark-card-background-color;
     }
     .author-introduction {
       color: $dark-middle-font-color;
@@ -19,8 +19,8 @@ body.dark {
     .item {
       color: $dark-middle-font-color;
       &[aria-selected='true'] {
-        color: $light-color;
-        border-bottom: 2px solid $light-color;
+        color: $dark-color;
+        border-bottom: 2px solid $dark-color;
       }
     }
   }
@@ -28,7 +28,7 @@ body.dark {
   // thumbnail
   .thumbnail {
     border-bottom: 1px solid $dark-border-color;
-    title {
+    .title {
       color: $dark-color;
     }
     p {
