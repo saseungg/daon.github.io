@@ -10,22 +10,22 @@ export const PostNavigator = ({ pageContext }) => {
     <div className="navigator-container">
       <div>
         {previous && (
-          <div className="post-card prev">
-            <Link to={previous.fields.slug} rel="prev">
+          <Link to={previous.fields.slug} rel="prev">
+            <div className="post-card prev">
               <div className="direction">이전 글</div>
               <div className="title">{previous.frontmatter.title}</div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         )}
       </div>
       <div>
         {next && (
-          <div className="post-card next">
-            <Link to={next.fields.slug} rel="next">
+          <Link to={next.fields.slug} rel="next">
+            <div className="post-card next">
               <div className="direction">다음 글</div>
               <div className="title">{next.frontmatter.title}</div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         )}
       </div>
     </div>
