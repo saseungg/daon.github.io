@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Daon's Dev Log`,
+  title: `DAONLOG`,
   description: `개발일기`,
   author: `saseungg`,
   introduction: `프론트엔드 개발자 다온!`,
