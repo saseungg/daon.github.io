@@ -18,6 +18,11 @@ body.dark {
     .author-image:hover {
       background-color: $dark-hover-color;
     }
+    .author-socials {
+      a::after {
+        background-color: $dark-color;
+      }
+    }
   }
 
   .category-container {

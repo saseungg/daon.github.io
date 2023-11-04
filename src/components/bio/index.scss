@@ -3,11 +3,11 @@
 .bio {
   .author-description {
     display: flex;
+    align-items: center;
   }
 
   .author-image {
     cursor: pointer;
-    margin-top: 12px;
     margin-right: 12px;
     margin-bottom: 0;
     min-width: 72px;
