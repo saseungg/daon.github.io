@@ -18,9 +18,15 @@ body.light {
     border-bottom: 1px solid $light-border-color;
     .item {
       color: $light-middle-font-color;
-      &[aria-selected='true'] {
+      &[aria-selected=true] {
         color: $light-color;
         border-bottom: 2px solid $light-color;
+      }
+      &:hover {
+        color: $light-color;
+      }
+      &::after {
+        background: $light-color;
       }
     }
   }

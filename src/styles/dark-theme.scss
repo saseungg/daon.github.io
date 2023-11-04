@@ -22,6 +22,12 @@ body.dark {
         color: $dark-color;
         border-bottom: 2px solid $dark-color;
       }
+      &:hover {
+        color: $dark-color;
+      }
+      &::after {
+        background: $dark-color;
+      }
     }
   }
 
