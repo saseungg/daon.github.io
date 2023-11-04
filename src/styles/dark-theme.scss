@@ -98,9 +98,9 @@ color: $dark-middle-font-color;
 
   // post
   blockquote {
-    &::before {
-      background-image: $light-blockquote-quote-image;
-    }
+    border-left-color: $dark-blockquote-border-color;
+    background: $dark-blockquote-background-color;
+    color: $dark-blockquote-font-color;
   }
 
   h2 {

@@ -90,7 +90,7 @@ body.light {
 
   // footer
   .footer {
-color: $light-middle-font-color;
+    color: $light-middle-font-color;
     a {
       color: $light-color;
     }
@@ -98,9 +98,9 @@ color: $light-middle-font-color;
 
   // post
   blockquote {
-    &::before {
-      background-image: $light-blockquote-quote-image;
-    }
+    border-left-color: $light-blockquote-border-color;
+    background: $light-blockquote-background-color;
+    color: $light-blockquote-font-color;
   }
 
   h2 {

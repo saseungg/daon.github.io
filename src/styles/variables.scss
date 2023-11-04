@@ -18,7 +18,9 @@ $light-hover-color: #eeeff1;
 $light-inline-color: #ffedbc;
 
 // blockquote
-$light-blockquote-quote-image: url('/images/quote-black.png');
+$light-blockquote-border-color: #20c997;
+$light-blockquote-background-color: #f8f9fa;
+$light-blockquote-font-color: #212529;
 
 //* dark-theme
 // body
@@ -27,7 +29,7 @@ $dark-color: #e6e6e6;
 $dark-border-color: #383636;
 
 // post-nav
-$dark-card-background-color: #323232;
+$dark-card-background-color: #242424;
 
 // font
 $dark-middle-font-color: #8e8f97;
@@ -39,5 +41,7 @@ $dark-hover-color: #3d3d3d;
 // inline-code
 $dark-inline-color: #593f5b;
 
-// blockquote
-$dark-blockquote-quote-image: url('/images/quote-white.png');
+// dark
+$dark-blockquote-border-color: #20c997;
+$dark-blockquote-background-color: #242424;
+$dark-blockquote-font-color: #ececec;
