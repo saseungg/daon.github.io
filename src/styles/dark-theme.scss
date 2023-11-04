@@ -15,30 +15,19 @@ body.dark {
   }
 
   .category-container {
+    border-bottom: 1px solid $dark-border-color;
     .item {
-      color: $light-category-font-color;
-      a {
-        color: $dark-category-text-color;
-      }
+      color: $dark-middle-font-color;
       &[aria-selected='true'] {
-        font-weight: bolder;
+        color: $light-color;
+        border-bottom: 2px solid $light-color;
       }
-      &[aria-selected='true'] a {
-        color: $dark-category-highlight-text-color;
-      }
-    }
-  }
-
-  .navigator {
-    a {
-      background-color: $navigator-background-color;
-      color: $dark-color;
     }
   }
 
   // thumbnail
   .thumbnail {
-    border-bottom: 1px solid $dark-thumbnail-border-color;
+    border-bottom: 1px solid $dark-border-color;
     title {
       color: $dark-color;
     }
@@ -77,43 +66,38 @@ body.dark {
   .footer {
     color: $dark-middle-font-color;
     a {
-      color: $dark-footer-font-color;
+      color: $dark-color;
     }
   }
 
   // post
-  h1,
-  h2 {
-    border-bottom-color: rgba(255, 255, 255, 0.3);
-  }
-
-  td {
-    border-bottom: 1px solid #eee;
-  }
-
   blockquote {
     &::before {
-      background-image: $dark-blockquote-quote-image;
+      background-image: $light-blockquote-quote-image;
     }
+  }
+
+  h2 {
+    border-bottom-color: $dark-border-color;
   }
 
   // inline code
   :not(pre) > code[class*='language-'] {
-    color: white;
-    box-shadow: inset 0 -0.5rem $dark-inline-shadow-color;
+    color: $dark-color;
+    box-shadow: inset 0 -0.5rem $dark-inline-color;
   }
 
-    // post-nav
-    .post-card {
-      background-color: $dark-card-background-color;
-      &:hover {
-        background-color: $dark-card-hover-background-color;
-      }
-      .direction {
-        color: $dark-direction-color;
-      }
-      .title {
-        color: $dark-color;
-      }
+  // post-nav
+  .post-card {
+    background-color: $dark-card-background-color;
+    &:hover {
+      background-color: $dark-card-hover-background-color;
     }
+    .direction {
+      color: $dark-middle-font-color;
+    }
+    .title {
+      color: $dark-color;
+    }
+  }
 }

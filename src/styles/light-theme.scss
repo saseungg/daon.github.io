@@ -1,5 +1,6 @@
 body.light {
   background-color: $light-background-color;
+  color: $light-color;
 
   .bio {
     .author-name-content {
@@ -14,8 +15,9 @@ body.light {
   }
 
   .category-container {
+    border-bottom: 1px solid $light-border-color;
     .item {
-      color: $light-category-font-color;
+      color: $light-middle-font-color;
       &[aria-selected='true'] {
         color: $light-color;
         border-bottom: 2px solid $light-color;
@@ -23,16 +25,9 @@ body.light {
     }
   }
 
-  .navigator {
-    a {
-      background-color: $navigator-background-color;
-      color: $light-color;
-    }
-  }
-
   // thumbnail
   .thumbnail {
-    border-bottom: 1px solid $light-thumbnail-border-color;
+    border-bottom: 1px solid $light-border-color;
     .title {
       color: $light-color;
     }
@@ -69,7 +64,7 @@ body.light {
 
   // footer
   .footer {
-    color: $light-footer-font-color;
+    color: $light-middle-font-color;
     a {
       color: $light-color;
     }
@@ -82,10 +77,14 @@ body.light {
     }
   }
 
+  h2 {
+    border-bottom-color: $light-border-color;
+  }
+
   /* inline code */
   :not(pre) > code[class*='language-'] {
-    color: black;
-    box-shadow: inset 0 -0.5rem $light-inline-shadow-color;
+    color: $light-color;
+    box-shadow: inset 0 -0.5rem $light-inline-color;
   }
 
   // post-nav
@@ -95,7 +94,7 @@ body.light {
       background-color: $light-card-hover-background-color;
     }
     .direction {
-      color: $light-direction-color;
+      color: $light-middle-font-color;
     }
     .title {
       color: $light-color;
