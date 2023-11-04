@@ -18,7 +18,7 @@ body.light {
       color: $light-category-font-color;
       &[aria-selected='true'] {
         color: $light-color;
-        background-color: rgba(13, 12, 34, 0.05);
+        border-bottom: 2px solid $light-color;
       }
     }
   }
