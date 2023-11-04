@@ -5,6 +5,9 @@ body.light {
   .bio {
     .author-name-content {
       background-color: $light-card-background-color;
+      &:hover {
+        background-color: $light-hover-color;
+      }
     }
     .author-introduction {
       color: $light-middle-font-color;
@@ -12,15 +15,23 @@ body.light {
     a {
       color: $light-color;
     }
+    .author-image:hover {
+      background-color: $light-hover-color;
+    }
+    .author-socials {
+      a::after {
+        background-color: $light-color;
+      }
+    }
   }
 
   .category-container {
     border-bottom: 1px solid $light-border-color;
     .item {
       color: $light-middle-font-color;
-      &[aria-selected=true] {
+      &[aria-selected='true'] {
         color: $light-color;
-        border-bottom: 2px solid $light-color;
+        border-bottom: 1.7px solid $light-color;
       }
       &:hover {
         color: $light-color;
@@ -97,7 +108,7 @@ body.light {
   .post-card {
     background-color: $light-card-background-color;
     &:hover {
-      background-color: $light-card-hover-background-color;
+      background-color: $light-hover-color;
     }
     .direction {
       color: $light-middle-font-color;

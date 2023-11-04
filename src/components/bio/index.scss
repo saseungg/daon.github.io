@@ -6,6 +6,7 @@
   }
 
   .author-image {
+    cursor: pointer;
     margin-top: 12px;
     margin-right: 12px;
     margin-bottom: 0;
@@ -35,11 +36,27 @@
 
   .author-socials {
     margin-top: 4px;
+
+    a::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1.3px;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
   }
 
   a {
     margin-right: 8px;
     font-size: 80%;
+    position: relative;
 
     &.visited {
       text-decoration: none;

@@ -5,12 +5,18 @@ body.dark {
   .bio {
     .author-name-content {
       background-color: $dark-card-background-color;
+      &:hover {
+        background-color: $dark-hover-color;
+      }
     }
     .author-introduction {
       color: $dark-middle-font-color;
     }
     a {
       color: $dark-color;
+    }
+    .author-image:hover {
+      background-color: $dark-hover-color;
     }
   }
 
@@ -97,7 +103,7 @@ body.dark {
   .post-card {
     background-color: $dark-card-background-color;
     &:hover {
-      background-color: $dark-card-hover-background-color;
+      background-color: $dark-hover-color;
     }
     .direction {
       color: $dark-middle-font-color;
