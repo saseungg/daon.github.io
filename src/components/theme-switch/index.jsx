@@ -76,7 +76,7 @@ export const ThemeSwitch = () => {
   return (
     <div className={`toggle ${isDark ? 'active' : ''}`}>
       <div
-        className={`move ${isDark && isAnimating ? 'shrink-and-fade-out' : ''}`}
+        className={`move ${isAnimating ? 'shrink-and-fade-out' : ''}`}
         onClick={() => toggleDarkMode(!isDark)}
       >
         {isDark ? <MoonIcon /> : <SunIcon />}
