@@ -77,11 +77,20 @@ body.light {
     svg {
       fill: $light-color;
     }
+    .home-nav {
+      &::after {
+        background: $light-color;
+      }
+    }
+  }
+
+  .move:hover {
+    background-color: $light-hover-color;
   }
 
   // footer
   .footer {
-    color: $light-middle-font-color;
+color: $light-middle-font-color;
     a {
       color: $light-color;
     }

@@ -2,7 +2,7 @@
 
 .header-container {
   display: flex;
-  height: 60px;
+  height: 70px;
   justify-content: center;
   width: 100%;
 
@@ -31,6 +31,23 @@
   .home-nav {
     display: inline-block;
     font-size: 17px;
-    padding-top: 8px;
+    width: auto;
+    height: auto;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 2.5px;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }

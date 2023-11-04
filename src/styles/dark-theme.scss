@@ -72,11 +72,20 @@ body.dark {
     svg {
       fill: $dark-color;
     }
+    .home-nav {
+      &::after {
+        background: $dark-color;
+      }
+    }
+  }
+
+  .move:hover {
+    background-color: $dark-hover-color;
   }
 
   // footer
   .footer {
-    color: $dark-middle-font-color;
+color: $dark-middle-font-color;
     a {
       color: $dark-color;
     }
