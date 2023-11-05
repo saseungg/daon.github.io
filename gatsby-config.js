@@ -29,9 +29,9 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: '@bonobolabs/gatsby-remark-images-custom-widths',
             options: {
-              maxWidth: 1200,
+              maxWidth: 700,
               linkImagesToOriginal: false,
             },
           },
