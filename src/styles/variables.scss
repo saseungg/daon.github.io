@@ -3,12 +3,17 @@
 $light-background-color: white;
 $light-color: black;
 $light-border-color: #ecf0f2;
+$light-a-color: #8c85ff;
+
+// bio
+$light-name-content-background-color: #f0f0f0;
+$light-name-content-hover-color: #e2e2e2;
 
 // post-nav
-$light-card-background-color: #f8f9fa;
+$light-post-nav-background-color: #f8f9fa;
 
 // font
-$light-middle-font-color: #989ba0;
+$light-middle-font-color: #959595;
 
 // hover
 $light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -28,8 +33,12 @@ $dark-background-color: #292a2d;
 $dark-color: #e6e6e6;
 $dark-border-color: #383636;
 
+// bio
+$dark-name-content-background-color: #373737;
+$dark-name-content-hover-color: #494848;
+
 // post-nav
-$dark-card-background-color: #242424;
+$dark-post-nav-background-color: #242424;
 
 // font
 $dark-middle-font-color: #8e8f97;

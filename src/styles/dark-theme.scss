@@ -1,12 +1,16 @@
 body.dark {
+  a {
+    color: $light-a-color;
+  }
+
   background-color: $dark-background-color;
   color: $dark-color;
 
   .bio {
     .author-name-content {
-      background-color: $dark-card-background-color;
+      background-color: $dark-name-content-background-color;
       &:hover {
-        background-color: $dark-hover-color;
+        background-color: $dark-name-content-hover-color;
       }
     }
     .author-introduction {
@@ -90,7 +94,7 @@ body.dark {
 
   // footer
   .footer {
-color: $dark-middle-font-color;
+    color: $dark-middle-font-color;
     a {
       color: $dark-color;
     }
@@ -115,7 +119,7 @@ color: $dark-middle-font-color;
 
   // post-nav
   .post-card {
-    background-color: $dark-card-background-color;
+    background-color: $dark-post-nav-background-color;
     &:hover {
       background-color: $dark-hover-color;
     }

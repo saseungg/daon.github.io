@@ -4,9 +4,9 @@ body.light {
 
   .bio {
     .author-name-content {
-      background-color: $light-card-background-color;
+      background-color: $light-name-content-background-color;
       &:hover {
-        background-color: $light-hover-color;
+        background-color: $light-name-content-hover-color;
       }
     }
     .author-introduction {
@@ -115,7 +115,7 @@ body.light {
 
   // post-nav
   .post-card {
-    background-color: $light-card-background-color;
+    background-color: $light-post-nav-background-color;
     &:hover {
       background-color: $light-hover-color;
     }

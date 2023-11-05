@@ -1,12 +1,12 @@
 module.exports = {
   title: `DAONLOG`,
   description: `개발일기`,
-  author: `saseungg`,
+  author: `saseungg`, 
   introduction: `프론트엔드 개발자 다온!`,
   siteUrl: `https://saseungg.github.io/`,
   social: {
     github: `saseungg`,
-    email: 'yeon14766@gmail.com'
+    email: `yeon14766@gmail.com`,
   },
   icon: `content/assets/favicon.png`,
   keywords: [`blog`],
