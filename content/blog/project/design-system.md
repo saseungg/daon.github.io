@@ -37,7 +37,7 @@ draft: false
 위처럼 기능 단위만 적는 것이 아니라 먼저 사용자가 어떤 동작을 할 수 있을지를 생각하면서 기능들을 구체화시켜나갔다.
 
 <p align="center">
-  <img width="481" alt="기획서" src="https://github.com/saseungg/pokemon/assets/115215178/19f97f14-ba42-4732-bc1d-b1cfa78ba387">
+  <img alt="기획서" src="./images/design-system/plan.jpeg" width="470px"/>
 </p>
 
 ### 스케치
@@ -48,7 +48,9 @@ draft: false
 
 처음부터 완벽하게 하기보단 계속 수정하면서 디벨롭 하는 게 베스트인 것 같다.
 
-![](https://velog.velcdn.com/images/saseungg/post/d347085e-6703-49df-b9d4-705f49de260c/image.png)
+<p align="center">
+  <img alt="스케치" src="./images/design-system/sketch.png" />
+</p>
 
 ### 디자인 참고
 
@@ -82,12 +84,14 @@ draft: false
 컴포넌트는 크게 icon, title, profile, folder, input, button, card로 만들었다.
 아래와 같이 클릭과 호버 됐을 경우까지 고려해서 만들어주었다.
 
-![image](https://github.com/saseungg/how-dns-works-translation/assets/115215178/873e8177-4b6e-48c7-9779-509e21e43058)
+<p align="center">
+  <img alt="컴포넌트" src="./images/design-system/component.png" />
+</p>
 
 컴포넌트들을 만들어두면 레이아웃을 구성할 때 만들어 둔 컴포넌트들만 붙이는 작업만 하면 된다. 또한 컴포넌트들만 수정하면 내가 가져다 놓은 레이아웃에 수정사항이 바로 반영이 되는 장점이 있다.
 
 <p align="center">
-	<img width="431" alt="컴포넌트" src="https://github.com/saseungg/pokemon/assets/115215178/bd8ad74b-1be3-4e0c-8c22-102a235919cb">
+  <img alt="컴포넌트 assets" src="./images/design-system/component-assets.jpeg" width="431px" />
 </p>
 
 컴포넌트 만드는 방법은 [링크](https://brunch.co.kr/@applehong/14)를 참고하면 좋을 것 같다.
@@ -95,7 +99,7 @@ draft: false
 ### 네이밍
 
 <p align="center">
-	<img width="349" alt="네이밍" src="https://github.com/saseungg/pokemon/assets/115215178/0f2b61d3-485d-400d-9b45-7521a88e40a3">
+  <img alt="프레임 네이밍" src="./images/design-system/frame-naming.jpeg" width="349px" />
 </p>
 
 전체적인 네이밍도 신경을 써주었다. 디자인 작업을 할 때 네이밍을 잘 지어두면 코드로 옮겼을 때 컴포넌트 네이밍을 피그마에 있는 네이밍과 동일하게 가면 되기 때문에 편리하다.
@@ -108,7 +112,7 @@ draft: false
 제일 중점적으로 신경 썼던 부분은 디자인과 코드의 컴포넌트 구조를 최대한 동일하게 가도록 하는 것이었다.
 
 <p align="center">
-	<img width="416" alt="컴포넌트구조" src="https://github.com/habit-developers/habit-morning/assets/115215178/61362ff3-5f5c-4160-8459-0781e0ea703b">
+  <img alt="컴포넌트 구조" src="./images/design-system/figma-frame-naming.jpeg" width="200px" />
 </p>
 
 피그마에 Frame 구조대로 html로 표현하면 이런 식으로 표현할 수 있다.
@@ -159,7 +163,7 @@ draft: false
 나는 아이콘, 패딩, 마진은 `8배수`, 폰트, radius는 `2배수` 기준으로 맞춰주었다. 폰트는 4배수 기준으로 맞추고 싶었지만 디자인상 2배수 기준으로 할 수밖에 없어서 2배수로 진행했다.
 
 <p align="center">
-	<img width="1689" alt="그리드" src="https://github.com/habit-developers/habit-morning/assets/115215178/990646ef-b8fa-40b5-8667-90d6545eb335">
+  <img alt="8포인트 그리드" src="./images/design-system/8point-grid.jpeg" />
 </p>
 
 > **TIP** : Layout grid를 8px로 맞춰두고 디자인 작업을 하면 레이아웃 배치할 때 편하다.
@@ -180,14 +184,18 @@ draft: false
 
 Opacity를 조절해서 컬러를 관리하면 좋은 점은 고정된 컬러 값으로 다양한 색상을 표현할 수 있는 것이다.
 
-![image](https://github.com/saseungg/how-dns-works-translation/assets/115215178/e57167a3-fdee-45f6-80c2-8203fe92f762)
+<p align="center">
+  <img alt="불투명도" src="./images/design-system/opacity.png" />
+</p>
 
 `#FFFFFF` white 컬러를 Opacity 조절해서 색상을 표현했다.
 원래대로라면 해당 컬러에 맞는 그레이 색상을 4가지를 정해야 하는데 한 컬러에 대해서 투명도만 조절하면 되니 색상을 관리하기가 편했다.
 
 또한 겹쳤을 때 색상이 진해지는데 내 디자인을 예시로 숫자를 표시하는 박스와 전체 배경을 `Color: blue, Opacity 20%` 로 같은 값을 주었는데도 전혀 다른 색상이 표현이 된다.
 
-![](./images/design-system/opacity.jpeg)
+<p align="center">
+  <img alt="폴더" src="./images/design-system/folder.jpeg" />
+</p>
 
 ### 컬러 팔레트
 
@@ -195,7 +203,7 @@ Opacity가 들어가는 white, gray 같은 색상들은 이해하기 쉽게 Opac
 Opacity에 관련되지 않는 컬러는 100단위로 200부터 시작하고 컬러가 진해질수록 큰 숫자가 들어가도록 해주었다.
 
 <p align="center">
-	<img width="431" alt="palette-1" src="https://github.com/habit-developers/habit-morning/assets/115215178/08d3e157-c6a7-4bc7-8ba3-942f1abb7036">
+  <img alt="컬러 팔레트" src="./images/design-system/color-palette-variable.jpeg" width="340px" />
 </p>
 
 컬러도 변수로 등록할 수 있으니 참고하자. 변수 등록 방법은 [링크](https://heinafantasy.com/374)를 참고하면 좋을 것 같다.
@@ -221,7 +229,7 @@ Opacity에 관련되지 않는 컬러는 100단위로 200부터 시작하고 컬
 이렇게만 말하면 와닿지 않으므로 디자인의 일부분을 예시로 시멘틱 컬러를 정의해 보겠다.
 
 <p align="center">
-	<img width="350" alt="design" src="https://github.com/habit-developers/habit-morning/assets/115215178/e72bbe43-9c41-425e-8ea5-dca1ef1251be">
+  <img alt="예시" src="./images/design-system/example.jpeg"  width="340px" />
 </p>
 
 위의 디자인을 보고 각 컴포넌트에 들어가는 모든 컬러들을 `컴포넌트+속성`을 기준으로 전부 정의해 보자.
@@ -271,13 +279,13 @@ outline: gray50
 > 컬러 팔레트
 
 <p align="center">
-	<img width="1872" alt="color-system-1" src="https://github.com/habit-developers/habit-morning/assets/115215178/8409abfe-b11b-4f2d-abd6-d20773b9c3ad">
+  <img alt="컬러 팔레트" src="./images/design-system/color-palette.png" />
 </p>
 
 > 시멘틱 컬러
 
 <p align="center">
-	<img width="410" alt="color-system-2" src="https://github.com/habit-developers/habit-morning/assets/115215178/11e31cd1-97c6-40e1-9a92-7dfdbffb4f38">
+  <img alt="시멘틱 컬러" src="./images/design-system/semantic-color.jpeg"  width="200px"/>
 </p>
 
 다크 모드 구현을 위해 새롭게 정의한 색상 팔레트와, 시멘틱 컬러이다. 컬러 팔레트를 기준으로 시메틱 컬러 색상을 정의하면 색상 변경이 용이하다.
@@ -285,15 +293,14 @@ outline: gray50
 예를 들어 gray 색상이 2개의 컴포넌트에 동시에 들어갈 경우 gray에서 blue로 색상 변경 시 컬러 팔레트에서 한 번만 수정하면 돼서 훨씬 편하다.
 
 <p align="center">
-	<img width="1067" alt="color-variable" src="https://github.com/habit-developers/habit-morning/assets/115215178/19a2e2d5-3847-4e11-9db9-38cb34534c07">
+  <img alt="피그마 컬러 변수" src="./images/design-system/figma-color-variable.jpeg" />
 </p>
 
 위 사진처럼 피그마에서 컬러 변수를 라이트, 다크 모두 설정할 수 있다고 하는데 유료 버전이라 나는 네이밍 앞에 라이트면 L, 다크는 D를 붙여서 표기해 주었다.
 
 <p align="center">
-	<img width="400" alt="color-variable-2" src="https://github.com/habit-developers/habit-morning/assets/115215178/7685044e-a860-4a12-9df1-63fcc61438d2">
+  <img alt="시멘틱 컬러 변수 등록" src="./images/design-system/semantic-color-variable.jpeg" width="300px" />
 </p>
-
 다크 모드를 적용하면서 도움이 됐던 블로그 링크를 첨부한다.
 
 - [다크 모드 받고 디자인 시스템 더블로 가! (1탄)](https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html)
@@ -302,7 +309,7 @@ outline: gray50
 ## 디자인 완성!
 
 <p align="center">
-	<img width="1028" alt="design-final" src="https://github.com/habit-developers/habit-morning/assets/115215178/6853bc18-b3c0-40b8-b0c7-b7966530528b">
+  <img alt="시멘틱 컬러" src="./images/design-system/final-design.jpeg" />
 </p>
 
 모든 작업이 끝나면 라이트 모드, 다크 모드 디자인이 완성이 된다.
