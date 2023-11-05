@@ -29,12 +29,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              strict: `ignore`,
-            },
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,

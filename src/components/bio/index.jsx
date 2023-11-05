@@ -35,6 +35,9 @@ export const Bio = forwardRef((props, ref) => {
                     {social.github && (
                       <a href={`https://github.com/${social.github}`}>GitHub</a>
                     )}
+                    {social.email && (
+                      <a href={`mailto:${social.email}`}>Email</a>
+                    )}
                   </p>
                 </div>
               </div>
