@@ -31,7 +31,7 @@ body.light {
       color: $light-middle-font-color;
       &[aria-selected='true'] {
         color: $light-color;
-        border-bottom: 1.7px solid $light-color;
+        border-bottom: 2px solid $light-color;
       }
       &:hover {
         color: $light-color;
