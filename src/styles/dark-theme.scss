@@ -1,8 +1,4 @@
 body.dark {
-  a {
-    color: $light-a-color;
-  }
-
   background-color: $dark-background-color;
   color: $dark-color;
 
@@ -109,6 +105,10 @@ body.dark {
 
   h2 {
     border-bottom-color: $dark-border-color;
+  }
+
+  a {
+    color: $dark-a-color;
   }
 
   // inline code
