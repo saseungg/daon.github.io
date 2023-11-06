@@ -3,6 +3,7 @@ title: '🎨 디자인 시스템 구축기'
 date: 2023-08-21 16:21:13
 category: 'Project'
 draft: false
+order: 1
 ---
 
 ### Table of Contents

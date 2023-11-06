@@ -3,6 +3,7 @@ title: '✨ 이미지 업로드 성능 최적화: 브라우저 내 이미지 리
 date: 2023-10-22 12:20:15
 category: 'Project'
 draft: false
+order: 1
 ---
 
 ![](https://velog.velcdn.com/images/saseungg/post/62f809cf-cd9e-418d-aa09-92a8d1c0b0eb/image.gif)
