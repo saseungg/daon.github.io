@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DAONLOG]]></title><description><![CDATA[개발일기]]></description><link>https://saseungg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 09:59:41 GMT</lastBuildDate><item><title><![CDATA[📐 개츠비 이미지 width값 조정]]></title><description><![CDATA[…]]></description><link>https://saseungg.github.io/blog/image-style/</link><guid isPermaLink="false">https://saseungg.github.io/blog/image-style/</guid><pubDate>Mon, 06 Nov 2023 03:29:20 GMT</pubDate><content:encoded>&lt;p&gt;개인 블로그를 만들면서 가장 하고 싶었던 건 첨부하는 이미지의 스타일을 입히는 거였다. 이미지에 스타일을 주느냐 안주느냐에 따라 느낌이 확 달라진다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DAONLOG]]></title><description><![CDATA[개발일기]]></description><link>https://saseungg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 14:27:58 GMT</lastBuildDate><item><title><![CDATA[📐 개츠비 이미지 width값 조정]]></title><description><![CDATA[…]]></description><link>https://saseungg.github.io/blog/image-style/</link><guid isPermaLink="false">https://saseungg.github.io/blog/image-style/</guid><pubDate>Mon, 06 Nov 2023 03:29:20 GMT</pubDate><content:encoded>&lt;p&gt;개인 블로그를 만들면서 가장 하고 싶었던 건 첨부하는 이미지의 스타일을 입히는 거였다. 이미지에 스타일을 주느냐 안주느냐에 따라 느낌이 확 달라진다.
 그림을 예시를 두고 차이를 비교해보자.&lt;/p&gt;
 &lt;p&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;&gt;
@@ -157,7 +157,9 @@
     &lt;/span&gt;
 &lt;/p&gt;
 &lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions&quot;&gt;https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[📦 nvm으로 노드 버전관리 자동화하기]]></title><description><![CDATA[nvm으로 프로젝트 노드 버전 관리를 하고 있다.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions&quot;&gt;Understanding GitHub Actions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[📦 nvm으로 노드 버전관리 자동화하기]]></title><description><![CDATA[nvm으로 프로젝트 노드 버전 관리를 하고 있다.
 하지만 프로젝트를 새롭게 낄 때마다 node를 재설정해줘야 되서 너무 불편했다.
 그래서 프로젝트로 진입했을 때 지정한 노드버전으로 해줄 방법을 찾다가 알게된 방법을 공유하고자 한다. nvm…]]></description><link>https://saseungg.github.io/tip/node-version/</link><guid isPermaLink="false">https://saseungg.github.io/tip/node-version/</guid><pubDate>Thu, 26 Oct 2023 19:50:15 GMT</pubDate><content:encoded>&lt;p&gt;nvm으로 프로젝트 노드 버전 관리를 하고 있다.
 하지만 프로젝트를 새롭게 낄 때마다 node를 재설정해줘야 되서 너무 불편했다.
@@ -585,28 +587,6 @@ REST API를 모킹하는 경우, msw 모듈의 rest 객체를 사용한다.&lt;/
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/foods&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQklEQVQI1z2IMQ6AMAzE+P/PGBAjDVG2LtCJGXqmZOAknyVPqgX5gqqhWJHN6Dr5pn6Pe36UjEantQP3nQhPF9vSLwYaS3+Jk8bsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;msw 5&quot;
-        title=&quot;msw 5&quot;
-        src=&quot;/static/e95d6fffae295a62b9bfd887eaf39b57/8c557/msw-5.png&quot;
-        srcset=&quot;/static/e95d6fffae295a62b9bfd887eaf39b57/4edbd/msw-5.png 175w,
-/static/e95d6fffae295a62b9bfd887eaf39b57/13ae7/msw-5.png 350w,
-/static/e95d6fffae295a62b9bfd887eaf39b57/8c557/msw-5.png 700w,
-/static/e95d6fffae295a62b9bfd887eaf39b57/e996b/msw-5.png 1050w,
-/static/e95d6fffae295a62b9bfd887eaf39b57/b5cea/msw-5.png 1140w&quot;
-        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;콘솔에 데이터가 제대로 출력되고 응답 상태에 대한 정보도 정확하게 표시된다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -695,14 +675,13 @@ REST API를 모킹하는 경우, msw 모듈의 rest 객체를 사용한다.&lt;/
 &lt;p&gt;이번에 정리하면서 MSW 사용법과 동작원리를 제대로 이해할 수 있었고 아직 공부하지 않은 에러나 테스트 하는 방법을 나중에 학습하고 업데이트 해야겠다. 프로젝트를 할 때 API가 지연된다면 MSW는 거의 필수인 것 같다.&lt;/p&gt;
 &lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://mswjs.io/docs/&quot;&gt;MSW 공식문서&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API&quot;&gt;MDN-Service Worker API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.daleseo.com/mock-service-worker/&quot;&gt;MSW로 백엔드 API 모킹하기&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tech.kakao.com/2021/09/29/mocking-fe/&quot;&gt;mocking으로 생산성까지 챙기는 FE 개발&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://velog.io/@khy226/msw%EB%A1%9C-%EB%AA%A8%EC%9D%98-%EC%84%9C%EB%B2%84-%EB%A7%8C%EB%93%A4%EA%B8%B0#%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-mocking-%EB%B0%A9%EC%8B%9D&quot;&gt;MSW(Mock Service Worker)로 더욱 생산적인 FE 개발하기&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://so-so.dev/web/service-worker/&quot;&gt;serviceWorker 이모저모 이야기&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tech.madup.com/mock-service-worker/&quot;&gt;MSW - 더 나이스한 목킹을 위한 고민&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://fe-developers.kakaoent.com/2022/220825-msw-integration-testing/&quot;&gt;MSW를 활용하는 Front-End 통합테스트&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://mswjs.io/docs/getting-started&quot;&gt;Getting started - Mock Service Worker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API&quot;&gt;Service Worker API - Web APIs | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.daleseo.com/mock-service-worker/&quot;&gt;MSW로 백엔드 API 모킹하기 | Engineering Blog by Dale Seo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tech.kakao.com/2021/09/29/mocking-fe/&quot;&gt;Mocking으로 생산성까지 챙기는 FE 개발 – tech.kakao.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://so-so.dev/web/service-worker/&quot;&gt;ServiceWorker 이모저모 이야기 | SOSOLOG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tech.madup.com/mock-service-worker/&quot;&gt;MSW - 더 나이스한 목킹을 위한 고민 | MADTECH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fe-developers.kakaoent.com/2022/220825-msw-integration-testing/&quot;&gt;MSW를 활용하는 Front-End 통합테스트 | 카카오엔터테인먼트 FE 기술블로그&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[🎨 디자인 시스템 구축기]]></title><description><![CDATA[Table of Contents 들어가며 프로젝트 기획과 스케치 1. 컴포넌트 2. 레이아웃 3. Color…]]></description><link>https://saseungg.github.io/project/design-system/</link><guid isPermaLink="false">https://saseungg.github.io/project/design-system/</guid><pubDate>Mon, 21 Aug 2023 16:21:13 GMT</pubDate><content:encoded>&lt;h3 id=&quot;table-of-contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#table-of-contents&quot; aria-label=&quot;table of contents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0&quot;&gt;들어가며&lt;/a&gt;&lt;/li&gt;
@@ -870,8 +849,8 @@ REST API를 모킹하는 경우, msw 모듈의 rest 객체를 사용한다.&lt;/
 &lt;/blockquote&gt;
 &lt;p&gt;정렬을 할 때 필요한 AutoLayout과 프레임에 대해서는 아래 블로그를 참고하면 좋을 것 같다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://figma-play.tistory.com/6&quot;&gt;피그마 핵심1) 오토 레이아웃에 대해서 알아볼까요?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://brunch.co.kr/@smu00/2&quot;&gt;피그마의 모든것, 프레임편 -1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://figma-play.tistory.com/6&quot;&gt;피그마 핵심1) 오토 레이아웃 고급 옵션에 대해 알아볼까요?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://brunch.co.kr/@smu00/2&quot;&gt;피그마의 모든 것, 프레임 편 - 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;3-color&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-color&quot; aria-label=&quot;3 color permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Color&lt;/h2&gt;
 &lt;p&gt;내가 가장 힘들었고 어려웠던 부분이 컬러였다. 컬러에서 많은 시행착오가 있었다.&lt;/p&gt;
@@ -1030,8 +1009,8 @@ outline: gray50&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 다크 모드를 적용하면서 도움이 됐던 블로그 링크를 첨부한다.
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html&quot;&gt;다크 모드 받고 디자인 시스템 더블로 가! (1탄)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://brunch.co.kr/@dnwhdrb98/7&quot;&gt;다크 모드 적용기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html&quot;&gt;[SOCAR FRAME 만들기 #2] 다크 모드 받고 디자인 시스템 더블로 가! (1탄) - SOCAR Tech Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://brunch.co.kr/@dnwhdrb98/7&quot;&gt;다크 모드 적용기(2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;디자인-완성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%99%84%EC%84%B1&quot; aria-label=&quot;디자인 완성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;디자인 완성!&lt;/h2&gt;
 &lt;p align=&quot;center&quot;&gt;
