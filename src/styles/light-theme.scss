@@ -43,6 +43,10 @@ body.light {
   }
 
   // thumbnail
+  .posts-count {
+    color: $light-middle-font-color;
+  }
+
   .thumbnail {
     border-bottom: 1px solid $light-border-color;
     .title {

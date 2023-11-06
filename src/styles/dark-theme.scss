@@ -43,6 +43,10 @@ body.dark {
   }
 
   // thumbnail
+  .posts-count {
+    color: $light-middle-font-color;
+  }
+  
   .thumbnail {
     border-bottom: 1px solid $dark-border-color;
     .title {

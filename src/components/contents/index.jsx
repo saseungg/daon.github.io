@@ -14,9 +14,10 @@ export const Contents = ({ posts, countOfInitialPost, count, category }) => {
       )
       .slice(0, count * countOfInitialPost)
   )
-
+  
   return (
     <ThumbnailContainer>
+      <span className='posts-count'>{refinedPosts.length} posts</span>
       {refinedPosts.map(({ node }, index) => (
         <ThumbnailItem node={node} key={`item_${index}`} />
       ))}
