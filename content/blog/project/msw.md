@@ -239,8 +239,6 @@ fetch('/foods')
   .then(data => console.log(data))
 ```
 
-![](./images/msw/msw-5.png)
-
 콘솔에 데이터가 제대로 출력되고 응답 상태에 대한 정보도 정확하게 표시된다.
 
 ![](./images/msw/msw-6.png)
@@ -320,11 +318,10 @@ GET 요청일 때 딜레이를 3초로 해놨기 때문에 네트워크 탭을 �
 
 ## References
 
-- [MSW 공식문서](https://mswjs.io/docs/)
-- [MDN-Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
-- [MSW로 백엔드 API 모킹하기](https://www.daleseo.com/mock-service-worker/)
-- [mocking으로 생산성까지 챙기는 FE 개발](https://tech.kakao.com/2021/09/29/mocking-fe/)
-- [MSW(Mock Service Worker)로 더욱 생산적인 FE 개발하기](https://velog.io/@khy226/msw%EB%A1%9C-%EB%AA%A8%EC%9D%98-%EC%84%9C%EB%B2%84-%EB%A7%8C%EB%93%A4%EA%B8%B0#%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-mocking-%EB%B0%A9%EC%8B%9D)
-- [serviceWorker 이모저모 이야기](https://so-so.dev/web/service-worker/)
-- [MSW - 더 나이스한 목킹을 위한 고민](https://tech.madup.com/mock-service-worker/)
-- [MSW를 활용하는 Front-End 통합테스트](https://fe-developers.kakaoent.com/2022/220825-msw-integration-testing/)
+- [Getting started - Mock Service Worker](https://mswjs.io/docs/getting-started)
+- [Service Worker API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- [MSW로 백엔드 API 모킹하기 | Engineering Blog by Dale Seo](https://www.daleseo.com/mock-service-worker/)
+- [Mocking으로 생산성까지 챙기는 FE 개발 – tech.kakao.com](https://tech.kakao.com/2021/09/29/mocking-fe/)
+- [ServiceWorker 이모저모 이야기 | SOSOLOG](https://so-so.dev/web/service-worker/)
+- [MSW - 더 나이스한 목킹을 위한 고민 | MADTECH](https://tech.madup.com/mock-service-worker/)
+- [MSW를 활용하는 Front-End 통합테스트 | 카카오엔터테인먼트 FE 기술블로그](https://fe-developers.kakaoent.com/2022/220825-msw-integration-testing/)

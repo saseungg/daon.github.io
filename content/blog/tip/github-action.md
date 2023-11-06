@@ -76,4 +76,4 @@ key는 yml에서 지정한 환경 변수 이름과 똑같이 GH_TOKEN으로 하�
 </p>
 
 ## References
-https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions
+- [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)

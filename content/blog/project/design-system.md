@@ -170,8 +170,8 @@ draft: false
 
 정렬을 할 때 필요한 AutoLayout과 프레임에 대해서는 아래 블로그를 참고하면 좋을 것 같다.
 
-- [피그마 핵심1) 오토 레이아웃에 대해서 알아볼까요?](https://figma-play.tistory.com/6)
-- [피그마의 모든것, 프레임편 -1](https://brunch.co.kr/@smu00/2)
+- [피그마 핵심1) 오토 레이아웃 고급 옵션에 대해 알아볼까요?](https://figma-play.tistory.com/6)
+- [피그마의 모든 것, 프레임 편 - 1](https://brunch.co.kr/@smu00/2)
 
 ## 3. Color
 
@@ -303,8 +303,8 @@ outline: gray50
 </p>
 다크 모드를 적용하면서 도움이 됐던 블로그 링크를 첨부한다.
 
-- [다크 모드 받고 디자인 시스템 더블로 가! (1탄)](https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html)
-- [다크 모드 적용기](https://brunch.co.kr/@dnwhdrb98/7)
+- [[SOCAR FRAME 만들기 #2] 다크 모드 받고 디자인 시스템 더블로 가! (1탄) - SOCAR Tech Blog](https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html)
+- [다크 모드 적용기(2)](https://brunch.co.kr/@dnwhdrb98/7)
 
 ## 디자인 완성!
 
