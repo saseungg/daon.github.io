@@ -10,7 +10,7 @@ body.dark {
       }
     }
     .author-introduction {
-      color: $dark-middle-font-color;
+      color: $dark-secondary-font-color;
     }
     a {
       color: $dark-color;
@@ -26,12 +26,12 @@ body.dark {
   }
 
   .category-container {
-    border-bottom: 1px solid $dark-border-color;
+    border-color: $dark-border-color;
     .item {
-      color: $dark-middle-font-color;
+      color: $dark-tertiary-font-color;
       &[aria-selected='true'] {
         color: $dark-color;
-        border-bottom: 2px solid $dark-color;
+        border-color: $dark-color;
       }
       &:hover {
         color: $dark-color;
@@ -44,16 +44,16 @@ body.dark {
 
   // thumbnail
   .posts-count {
-    color: $light-middle-font-color;
+    color: $light-secondary-font-color;
   }
-  
+
   .thumbnail {
-    border-bottom: 1px solid $dark-border-color;
+    border-color: $dark-border-color;
     .title {
       color: $dark-color;
     }
     p {
-      color: $dark-middle-font-color;
+      color: $dark-secondary-font-color;
     }
 
     .thumbnail-text {
@@ -66,10 +66,10 @@ body.dark {
   }
 
   .thumbnail-subinfo {
-    color: $dark-middle-font-color;
+    color: $dark-secondary-font-color;
 
     .subinfo-box-icon {
-      stroke: $dark-middle-font-color;
+      stroke: $dark-secondary-font-color;
     }
   }
 
@@ -94,7 +94,7 @@ body.dark {
 
   // footer
   .footer {
-    color: $dark-middle-font-color;
+    color: $dark-secondary-font-color;
     a {
       color: $dark-color;
     }
@@ -132,7 +132,7 @@ body.dark {
       background-color: $dark-hover-color;
     }
     .direction {
-      color: $dark-middle-font-color;
+      color: $dark-secondary-font-color;
     }
     .title {
       color: $dark-color;

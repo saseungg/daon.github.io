@@ -10,7 +10,7 @@ body.light {
       }
     }
     .author-introduction {
-      color: $light-middle-font-color;
+      color: $light-secondary-font-color;
     }
     a {
       color: $light-color;
@@ -26,12 +26,12 @@ body.light {
   }
 
   .category-container {
-    border-bottom: 1px solid $light-border-color;
+    border-color: $light-border-color;
     .item {
-      color: $light-middle-font-color;
+      color: $light-tertiary-font-color;
       &[aria-selected='true'] {
         color: $light-color;
-        border-bottom: 2px solid $light-color;
+        border-color: $light-color;
       }
       &:hover {
         color: $light-color;
@@ -44,16 +44,16 @@ body.light {
 
   // thumbnail
   .posts-count {
-    color: $light-middle-font-color;
+    color: $light-secondary-font-color;
   }
 
   .thumbnail {
-    border-bottom: 1px solid $light-border-color;
+    border-color: $light-border-color;
     .title {
       color: $light-color;
     }
     p {
-      color: $light-middle-font-color;
+      color: $light-secondary-font-color;
     }
 
     .thumbnail-text {
@@ -66,10 +66,10 @@ body.light {
   }
 
   .thumbnail-subinfo {
-    color: $light-middle-font-color;
+    color: $light-secondary-font-color;
 
     .subinfo-box-icon {
-      stroke: $light-middle-font-color;
+      stroke: $light-secondary-font-color;
     }
   }
 
@@ -94,7 +94,7 @@ body.light {
 
   // footer
   .footer {
-    color: $light-middle-font-color;
+    color: $light-secondary-font-color;
     a {
       color: $light-color;
     }
@@ -128,7 +128,7 @@ body.light {
       background-color: $light-hover-color;
     }
     .direction {
-      color: $light-middle-font-color;
+      color: $light-secondary-font-color;
     }
     .title {
       color: $light-color;
