@@ -3,7 +3,6 @@ title: '👾 MSW로 목데이터 만들기'
 date: 2023-09-13 12:20:15
 category: 'Project'
 draft: false
-order: 1
 ---
 
 issu-tracker 프로젝트 당시 MSW를 사용해서 목서버를 띄웠던 경험이 있다. 그 당시에는 사용법만 익혀서 부랴부랴 적용하기 바빴다. 이후 과제를 진행하던 중 API가 동작하지 않아 목서버를 띄우면서 문득 의문이 들었다.
