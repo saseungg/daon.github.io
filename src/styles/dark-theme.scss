@@ -111,6 +111,10 @@ body.dark {
     color: $dark-a-color;
   }
 
+  img {
+    border-color: $dark-border-color;
+  }
+
   // inline code
   :not(pre) > code[class*='language-'] {
     color: $dark-color;

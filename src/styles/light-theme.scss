@@ -107,6 +107,10 @@ body.light {
     border-bottom-color: $light-border-color;
   }
 
+  img {
+    border-color: $light-border-color;
+  }
+
   /* inline code */
   :not(pre) > code[class*='language-'] {
     color: $light-color;
