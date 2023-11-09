@@ -29,6 +29,10 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {figureClassName: 'md-figure'},
+          },
+          {
             resolve: '@bonobolabs/gatsby-remark-images-custom-widths',
             options: {
               maxWidth: 700,
