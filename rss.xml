@@ -1,72 +1,234 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DAONLOG]]></title><description><![CDATA[개발일기]]></description><link>https://saseungg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Nov 2023 14:44:38 GMT</lastBuildDate><item><title><![CDATA[🌐 네트워크 스터디 1주차]]></title><description><![CDATA[…]]></description><link>https://saseungg.github.io/study/network-1/</link><guid isPermaLink="false">https://saseungg.github.io/study/network-1/</guid><pubDate>Wed, 08 Nov 2023 16:21:13 GMT</pubDate><content:encoded>&lt;h2 id=&quot;컴퓨터-네트워크와-네트워크-레이어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%99%80-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%A0%88%EC%9D%B4%EC%96%B4&quot; aria-label=&quot;컴퓨터 네트워크와 네트워크 레이어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;컴퓨터 네트워크와 네트워크 레이어&lt;/h2&gt;
-&lt;h3 id=&quot;컴퓨터-네트워크에-대해서-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;컴퓨터 네트워크에 대해서 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;컴퓨터 네트워크에 대해서 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;두 대 이상의 컴퓨터들을 연결하고 서로 통신할 수 있는 것. 즈, 어떠한 연결을 통해 컴퓨터의 자원을 공유하는 것&lt;/p&gt;
-&lt;h3 id=&quot;현대-컴퓨터-네트워크에서-데이터를-어떻게-전달할까요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%98%84%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A0%84%EB%8B%AC%ED%95%A0%EA%B9%8C%EC%9A%94&quot; aria-label=&quot;현대 컴퓨터 네트워크에서 데이터를 어떻게 전달할까요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;현대 컴퓨터 네트워크에서 데이터를 어떻게 전달할까요?&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DAONLOG]]></title><description><![CDATA[개발일기]]></description><link>https://saseungg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Nov 2023 10:35:50 GMT</lastBuildDate><item><title><![CDATA[🌐 네트워크 스터디 1주차]]></title><description><![CDATA[HTTP (HyperText Transfer Protocol) 인터넷에서 데이터를 주고 받을 수 있는 프로토콜이다. HTTP 특징 클라이언트 서버 구조 Request Response 구조 클라이언트가 서버에게 HTTP…]]></description><link>https://saseungg.github.io/study/network-1/</link><guid isPermaLink="false">https://saseungg.github.io/study/network-1/</guid><pubDate>Wed, 08 Nov 2023 16:21:13 GMT</pubDate><content:encoded>&lt;h2 id=&quot;http-hypertext-transfer-protocol&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-hypertext-transfer-protocol&quot; aria-label=&quot;http hypertext transfer protocol permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP (HyperText Transfer Protocol)&lt;/h2&gt;
+&lt;p&gt;인터넷에서 데이터를 주고 받을 수 있는 프로토콜이다.&lt;/p&gt;
+&lt;h2 id=&quot;http-특징&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%ED%8A%B9%EC%A7%95&quot; aria-label=&quot;http 특징 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 특징&lt;/h2&gt;
+&lt;h3 id=&quot;클라이언트-서버-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;클라이언트 서버 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;클라이언트 서버 구조&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;회선 교환 방식&lt;/p&gt;
+&lt;li&gt;Request Response 구조&lt;/li&gt;
+&lt;li&gt;클라이언트가 서버에게 HTTP 요청을 보내면 서버는 요청한 데이터를 HTTP 응답을 통해 보내주는 클라이언트 서버 구조로 이루어져 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;md-figure&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.857142857142854%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd5XCZQP/8QAGBABAQADAAAAAAAAAAAAAAAAAQACECH/2gAIAQEAAQUCu2Cpv//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAEQESAh/9oACAEBAAY/Aloin//EABoQAAMAAwEAAAAAAAAAAAAAAAABERAhQXH/2gAIAQEAAT8ho3tLfB/b2s307hH/2gAMAwEAAgADAAAAEBAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAAICAwAAAAAAAAAAAAAAAQARMVEQIcH/2gAIAQEAAT8Qyq+9QxcgNEEiDGjc88YT/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;request response&quot;
+        title=&quot;request response&quot;
+        src=&quot;/static/df0166394951249fac4263d9bc53dca0/29d31/request-response.jpg&quot;
+        srcset=&quot;/static/df0166394951249fac4263d9bc53dca0/e52aa/request-response.jpg 175w,
+/static/df0166394951249fac4263d9bc53dca0/70ebb/request-response.jpg 350w,
+/static/df0166394951249fac4263d9bc53dca0/29d31/request-response.jpg 700w,
+/static/df0166394951249fac4263d9bc53dca0/9ecec/request-response.jpg 1050w,
+/static/df0166394951249fac4263d9bc53dca0/d165a/request-response.jpg 1400w,
+/static/df0166394951249fac4263d9bc53dca0/0614e/request-response.jpg 1498w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;이미지 출처: https://joshua1988.github.io/web-development/http-part1/&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;통신을 원하는 두 지점을 교환기를 이용하여 물리적으로 접속시키는 방법 (ex: 음성 전화망)&lt;/li&gt;
+&lt;li&gt;클라이언트: 서버에 요청을 보내고, 응답 대기&lt;/li&gt;
+&lt;li&gt;서버: 요청에 대한 결과를 만들어서 응답 전송&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;공간 분할 교환 방식&lt;/p&gt;
+&lt;h3 id=&quot;stateless-무상태성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#stateless-%EB%AC%B4%EC%83%81%ED%83%9C%EC%84%B1&quot; aria-label=&quot;stateless 무상태성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stateless (무상태성)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;기계식 접점과 전자 교환기의 전자식 접점 등을 이용하여 교환을 수행하는 방식&lt;/li&gt;
+&lt;li&gt;서버가 클라이언트의 상태를 보존하지 않는다.&lt;/li&gt;
+&lt;li&gt;장점: 확장성이 높음 (서버가 바뀌어도 영향이 없음)&lt;/li&gt;
+&lt;li&gt;단점: 클라이언트가 추가 데이터 전송&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;시분할 교환 방식&lt;/p&gt;
+&lt;p&gt;로그인같이 상태를 유지해야할 경우에는 쿠키와 세션등을 사용해서 상태를 유지한다. 단, 상태 유지는 최소한만 사용하는게 좋음&lt;/p&gt;
+&lt;h3 id=&quot;connetionless-비-연결성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#connetionless-%EB%B9%84-%EC%97%B0%EA%B2%B0%EC%84%B1&quot; aria-label=&quot;connetionless 비 연결성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Connetionless (비 연결성)&lt;/h3&gt;
+&lt;p&gt;HTTP는 기본이 연결을 유지하지 않는 모델이다. 실제로 요청을 주고 받을 때만 연결을 유지하고 응답을 주고나면 서버와의 연결을 끊는다.&lt;/p&gt;
+&lt;p&gt;장점: 서버 자원을 최소화하기 때문에 효율적으로 사용할 수 있음 (부하를 줄일 수 있음)&lt;/p&gt;
+&lt;p&gt;단점: 새로 연결을 할 때마다 자원을 다시 다운로드 받아야함. 지금은 지속 연결로 최적화함. 이러한 단점들을 HTTP/2, HTTP/3에서 최적화함.&lt;/p&gt;
+&lt;h3 id=&quot;keep-alive&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#keep-alive&quot; aria-label=&quot;keep alive permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Keep-alive&lt;/h3&gt;
+&lt;p&gt;keep alive는 클라이언트측에 연결을 유지하라는 신호를 보내기 위해서 사용한다.그러면 클라이언트는 최대 timeout에 지정된 시간동안 연결을 유지한다. 이 시간동안 클라이언트는 이미 맺어진 연결로 요청을 계속 보낼 수 있다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;전자 부품이 갖는 고속성과 디지털 교환 기술을 이용하여 다수의 디지털 신호를 시분할적으로 동작시켜 다중화하는 방식&lt;/li&gt;
+&lt;li&gt;HTTP 1.1 부터는 keep-alive 기능을 지원한다. &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;라우터와-스위치에-대해-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%9D%BC%EC%9A%B0%ED%84%B0%EC%99%80-%EC%8A%A4%EC%9C%84%EC%B9%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;라우터와 스위치에 대해 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;라우터와 스위치에 대해 설명해주세요.&lt;/h3&gt;
+&lt;h4 id=&quot;keep-alive-지원하지-않을-경우&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#keep-alive-%EC%A7%80%EC%9B%90%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%84-%EA%B2%BD%EC%9A%B0&quot; aria-label=&quot;keep alive 지원하지 않을 경우 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;keep alive 지원하지 않을 경우&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 웹 서버에 연결한다.
+- HTML 문서를 다운로드 한다.
+- 웹 서버 연결을 끊는다.
+- HTML 문서의 image, css, javascript 링크들을 읽어서 다운로드해야할 경로를 저장한다.
+- 웹 서버에 연결한다.
+- 첫번째 이미지를 다운로드
+연결을 끊는다.
+- 웹 서버에 연결한다.
+- 두번째 이미지를 다운로드 연결을 끊는다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;keep-alive-지원&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#keep-alive-%EC%A7%80%EC%9B%90&quot; aria-label=&quot;keep alive 지원 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;keep alive 지원&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 웹 서버에 연결한다.
+- HTML 문서를 다운로드 한다.
+- Image, css, javascript 들을 다운로드 한다.
+- 모든 문서를 다운로드 받았다면 연결을 끊는다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;http-파이프라이닝&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8B%9D&quot; aria-label=&quot;http 파이프라이닝 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 파이프라이닝&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&quot;md-figure&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe5VI0P/xAAVEAEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAQABBQKlP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABkQAQEBAAMAAAAAAAAAAAAAAAABESFx8P/aAAgBAQABPyHoyM9UhE5f/9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQEAAgIDAAAAAAAAAAAAAAERACFBUXGhsf/aAAgBAQABPxANuHm+uMhqLTvL4PpwKYD2GI3CYouf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pipelining&quot;
+        title=&quot;pipelining&quot;
+        src=&quot;/static/10694f5cdc2b58157e25650d63c0be0f/29d31/pipelining.jpg&quot;
+        srcset=&quot;/static/10694f5cdc2b58157e25650d63c0be0f/e52aa/pipelining.jpg 175w,
+/static/10694f5cdc2b58157e25650d63c0be0f/70ebb/pipelining.jpg 350w,
+/static/10694f5cdc2b58157e25650d63c0be0f/29d31/pipelining.jpg 700w,
+/static/10694f5cdc2b58157e25650d63c0be0f/9ecec/pipelining.jpg 1050w,
+/static/10694f5cdc2b58157e25650d63c0be0f/9e23d/pipelining.jpg 1174w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;이미지 출처: https://developer.mozilla.org/ko/docs/Web/HTTP/Connection_management_in_HTTP_1.x&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;영속적인 커넥션 모델은 연속적인 요청 사이에 커넥션을 유지하여 새 커넥션을 여는데 필요한 시간을 줄이지만. 파이프라이닝은 한 단계 더 나아가, 응답조차도 기다리지 않고 연속적인 요청을 보내서 네트워크 지연을 더욱 줄인다.&lt;/p&gt;
+&lt;h2 id=&quot;http-method&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-method&quot; aria-label=&quot;http method permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP METHOD&lt;/h2&gt;
+&lt;p&gt;HTTP 메서드는 Client가 Server에게 요청할 때 기대하는 행동을 말한다. 예시를 들어 설명해보겠다.&lt;/p&gt;
+&lt;p&gt;API URI 설계를 해본다고 하자. 필요한 데이터 목록들은 아래와 같다.&lt;/p&gt;
+&lt;p&gt;유저 정보 조회, 유저 등록, 유저 수정, 유저 삭제&lt;/p&gt;
+&lt;p&gt;필요한 데이터와 행동들에 따라 URI을 설계해보겠다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;라우터 : 데이터를 올바르게 전달할 수 있도록 도와주는 장치&lt;/li&gt;
-&lt;li&gt;스위치 : 데이터가 들어왔을 때 데이터를 요청한 기기가 누구인지 파악하고 정확한 목적지로 전달하는 장비&lt;/li&gt;
+&lt;li&gt;유저 조회: &lt;code class=&quot;language-text&quot;&gt;/users-read&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;유저 등록: &lt;code class=&quot;language-text&quot;&gt;/users-create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;유저 수정: &lt;code class=&quot;language-text&quot;&gt;/users-update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;유저 삭제: &lt;code class=&quot;language-text&quot;&gt;/users-delete&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;프로토콜이-뭔가요-프로토콜-스택에-대해서-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%B4-%EB%AD%94%EA%B0%80%EC%9A%94-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%8A%A4%ED%83%9D%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;프로토콜이 뭔가요 프로토콜 스택에 대해서 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로토콜이 뭔가요? 프로토콜 스택에 대해서 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;컴퓨터나 원거리 통신 장비 사이에서 메시지를 주고 받는 양식과 규칙의 체계&lt;/p&gt;
-&lt;h2 id=&quot;http-프로토콜&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C&quot; aria-label=&quot;http 프로토콜 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 프로토콜&lt;/h2&gt;
-&lt;h3 id=&quot;http-프로토콜이-무엇인가요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%B4-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94&quot; aria-label=&quot;http 프로토콜이 무엇인가요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 프로토콜이 무엇인가요?&lt;/h3&gt;
+&lt;p&gt;필요한 데이터와 행동들에 따라 URI를 설계했지만 과연 이게 옳은 API 설계일까? 아니다. 잘 생각해보면 DB에 저장되는 데이터 = 리소스는 유저의 정보 하나이다. DB에서 관리할 리소스에 따라 이 데이터를 어떻게 관리할지에 대한 행동을 나타내는게 메서드이다. API를 설계할 때 가장 중요한 것은 리소스와 행위를 분리해야한다.&lt;/p&gt;
+&lt;p&gt;말한 개념대로 URI를 설계해보면 &lt;code class=&quot;language-text&quot;&gt;/users/{id}&lt;/code&gt;로 통일되고 어떤 행동을 할 건지는 메서드를 Header에 전달하면 된다.&lt;/p&gt;
+&lt;p&gt;자, 그럼 메서드 종류에 대해서 알아보자!&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;메서드&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;서버로부터 리소스를 조회. 데이터는 주로 쿼리 매개변수를 통해 전송&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;POST&lt;/td&gt;
+&lt;td&gt;요청 데이터 처리, 주로 등록&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUT&lt;/td&gt;
+&lt;td&gt;기존 리소스를 대체하거나 없는 경우 새로 생성&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PATCH&lt;/td&gt;
+&lt;td&gt;리소스 부분 수정&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DELETE&lt;/td&gt;
+&lt;td&gt;리소스 삭제&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;post와-put-차이점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#post%EC%99%80-put-%EC%B0%A8%EC%9D%B4%EC%A0%90&quot; aria-label=&quot;post와 put 차이점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;POST와 PUT 차이점&lt;/h3&gt;
+&lt;p&gt;클라이언트가 리소스 위치를 알고 URI 지정한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;POST/users HTTP/1.1
+Content-Type: application/json
+{
+    &quot;name&quot;: &quot;daon&quot;,
+    &quot;age&quot;: 24
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;PUT/users/100 HTTP/1.1
+Content-Type: application/json
+{
+    &quot;name&quot;: &quot;daon&quot;,
+    &quot;age&quot;: 24
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;POST는 Client가 신규 정보를 body에 담아주면 응답으로 id값을 생성해서 보내주지만, PUT은 Client가 변경해야할 위치, 즉 어떤 id를 가진 유저의 정보를 수정할 것인지를 알고 요청에 담아서 보낸다.&lt;/p&gt;
+&lt;h3 id=&quot;patch와-put-차이점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#patch%EC%99%80-put-%EC%B0%A8%EC%9D%B4%EC%A0%90&quot; aria-label=&quot;patch와 put 차이점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PATCH와 PUT 차이점&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;HTTP(Hyper Text Transfer Protocol)
-서버와 클라이언트간의 TCP/IP 통신 위에서 메시지를 교환하기 위해 사용되는 프로토콜&lt;/li&gt;
+&lt;li&gt;PUT은 데이터를 대체하지만, PATCH는 부분 변경한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;http의-요청응답-모델에-대해-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http%EC%9D%98-%EC%9A%94%EC%B2%AD%EC%9D%91%EB%8B%B5-%EB%AA%A8%EB%8D%B8%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http의 요청응답 모델에 대해 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP의 요청/응답 모델에 대해 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;클라이언트가 서버에게 http request(요청)을 보내면 서버가 http response(응답)을 보내는 방식. (클라이언트와 서버의 모든 통신이 요청과 응답으로 이루어 진다.)&lt;/p&gt;
-&lt;h3 id=&quot;http-메서드가-뭔가요-알고-있는-메서드-몇가지-알려주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EB%A9%94%EC%84%9C%EB%93%9C-%EB%AA%87%EA%B0%80%EC%A7%80-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http 메서드가 뭔가요 알고 있는 메서드 몇가지 알려주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 메서드가 뭔가요? 알고 있는 메서드 몇가지 알려주세요.&lt;/h3&gt;
+&lt;h2 id=&quot;http-상태-코드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C&quot; aria-label=&quot;http 상태 코드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 상태 코드&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;상태 코드&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1xx&lt;/td&gt;
+&lt;td&gt;(Informational) 조건부 응답&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2xx&lt;/td&gt;
+&lt;td&gt;(Successful) 성공&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3xx&lt;/td&gt;
+&lt;td&gt;(Redirection) 리다이렉션 완료&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4xx&lt;/td&gt;
+&lt;td&gt;(Client Error) 요청 오류&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5xx&lt;/td&gt;
+&lt;td&gt;(Server Error) 서버 오류&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;메시지-포맷&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%8F%AC%EB%A7%B7&quot; aria-label=&quot;메시지 포맷 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;메시지 포맷&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&quot;md-figure&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 38.285714285714285%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/aAAwDAQACEAMQAAAB1agsQI3/xAAYEAACAwAAAAAAAAAAAAAAAAAAAQIQEf/aAAgBAQABBQKdaz//xAAYEQACAwAAAAAAAAAAAAAAAAAAAgFBUf/aAAgBAwEBPwFqIVcP/8QAFhEAAwAAAAAAAAAAAAAAAAAAAhAx/9oACAECAQE/ASq//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEABj8CL//EABkQAAIDAQAAAAAAAAAAAAAAAAABESExQf/aAAgBAQABPyFA5XS7D//aAAwDAQACAAMAAAAQf+//xAAXEQEBAQEAAAAAAAAAAAAAAAABABGB/9oACAEDAQE/EEj1YCf/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QOJ//xAAaEAEBAAIDAAAAAAAAAAAAAAABEQAhMVGB/9oACAEBAAE/EATgezLCabtTEkFHef/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;message format list&quot;
+        title=&quot;message format list&quot;
+        src=&quot;/static/60ded7713abf9653530cb9f85c9d4ff6/29d31/message-format-list.jpg&quot;
+        srcset=&quot;/static/60ded7713abf9653530cb9f85c9d4ff6/e52aa/message-format-list.jpg 175w,
+/static/60ded7713abf9653530cb9f85c9d4ff6/70ebb/message-format-list.jpg 350w,
+/static/60ded7713abf9653530cb9f85c9d4ff6/29d31/message-format-list.jpg 700w,
+/static/60ded7713abf9653530cb9f85c9d4ff6/9ecec/message-format-list.jpg 1050w,
+/static/60ded7713abf9653530cb9f85c9d4ff6/d165a/message-format-list.jpg 1400w,
+/static/60ded7713abf9653530cb9f85c9d4ff6/fb8ff/message-format-list.jpg 1914w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;이미지 출처: https://ko.wikipedia.org/wiki/HTTP&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;학습-체크&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%99%EC%8A%B5-%EC%B2%B4%ED%81%AC&quot; aria-label=&quot;학습 체크 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;학습 체크&lt;/h2&gt;
+&lt;p&gt;학습한 내용을 바탕으로 질문에 스스로 답해보자.&lt;/p&gt;
+&lt;h3 id=&quot;-http-프로토콜&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-http-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C&quot; aria-label=&quot; http 프로토콜 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;📌 HTTP 프로토콜&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;http request가 의도하는 action을 정의한 것을 말한다.&lt;/li&gt;
-&lt;li&gt;GET, POST, PUT, DELETE, PATCH가 있음&lt;/li&gt;
+&lt;li&gt;HTTP 프로토콜이 무엇인가요?&lt;/li&gt;
+&lt;li&gt;HTTP의 요청/응답 모델에 대해 설명해주세요.&lt;/li&gt;
+&lt;li&gt;HTTP 메서드가 뭔가요? 알고 있는 메서드 몇가지 알려주세요.&lt;/li&gt;
+&lt;li&gt;HTTP 메서드중 GET과 POST의 차이점은 뭔가요?&lt;/li&gt;
+&lt;li&gt;HTTP 메서드중 PUT과 PATCH의 차이점은 뭘까요?&lt;/li&gt;
+&lt;li&gt;HTTP 상태 코드가 뭔가요? 알고 있는 상태 코드 몇가지 알려주세요.&lt;/li&gt;
+&lt;li&gt;HTTP 헤더가 뭘까요? 알고 있는 헤더 몇 가지 설명해주세요.&lt;/li&gt;
+&lt;li&gt;HTTP의 무상태성(Stateless)에 대해서 설명해주세요.&lt;/li&gt;
+&lt;li&gt;HTTP Keep-Alive에 대해서 설명해주세요.&lt;/li&gt;
+&lt;li&gt;HTTP 파이프라이닝에 대해서 설명해주세요.&lt;/li&gt;
+&lt;li&gt;HTTP/1.1, HTTP/2, HTTP/3 각각의 특징에 대해 설명해주세요.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;http-메서드중-get과-post의-차이점은-뭔가요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%EB%A9%94%EC%84%9C%EB%93%9C%EC%A4%91-get%EA%B3%BC-post%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AD%94%EA%B0%80%EC%9A%94&quot; aria-label=&quot;http 메서드중 get과 post의 차이점은 뭔가요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 메서드중 GET과 POST의 차이점은 뭔가요?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;get은 데이터를 가져올 때, post는 body에 서버에 전달하고 싶은 데이터를 보낼 때 주로 사용한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;http-메서드중-put과-patch의-차이점은-뭘까요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%EB%A9%94%EC%84%9C%EB%93%9C%EC%A4%91-put%EA%B3%BC-patch%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AD%98%EA%B9%8C%EC%9A%94&quot; aria-label=&quot;http 메서드중 put과 patch의 차이점은 뭘까요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 메서드중 PUT과 PATCH의 차이점은 뭘까요?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;put은 요청 페이로드를 사용해 새로운 리소스를 생성하거나, 대상 리소스를 나타내는 데이터를 대체함&lt;/li&gt;
-&lt;li&gt;patch는 리소스의 부분적인 수정을 할 때 사용함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;http-상태-코드가-뭔가요-알고-있는-상태-코드-몇가지-알려주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94-%EC%95%8C%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EB%AA%87%EA%B0%80%EC%A7%80-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http 상태 코드가 뭔가요 알고 있는 상태 코드 몇가지 알려주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 상태 코드가 뭔가요? 알고 있는 상태 코드 몇가지 알려주세요.&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;1xx
-요청을 받았으며 해당 요청에 대한 프로세스를 진행 중&lt;/li&gt;
-&lt;li&gt;2xx : 성공 상태&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;http-keep-alive에-대해서-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-keep-alive%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http keep alive에 대해서 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP Keep-Alive에 대해서 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;http connection이 끊어지지 않고 유지하도록 하는 것&lt;/p&gt;
-&lt;h3 id=&quot;http-파이프라이닝에-대해서-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8B%9D%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http 파이프라이닝에 대해서 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP 파이프라이닝에 대해서 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;HTTP 파이프라이닝은 응답을 기다리지 않고 단일 TCP 연결을 통해 여러 HTTP 요청을 보내는 기술&lt;/p&gt;
-&lt;h3 id=&quot;http11-http2-http3-각각의-특징에-대해-설명해주세요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#http11-http2-http3-%EA%B0%81%EA%B0%81%EC%9D%98-%ED%8A%B9%EC%A7%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94&quot; aria-label=&quot;http11 http2 http3 각각의 특징에 대해 설명해주세요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP/1.1, HTTP/2, HTTP/3 각각의 특징에 대해 설명해주세요.&lt;/h3&gt;
-&lt;p&gt;http/1.1 : 커넥션 유지, 헤더
-http/2 : 바이너리 형식으로 인코딩 변경, 파싱 전송 속도 빨라짐, HOL Blocking 문제 개선, header 중복 해결
-http/3 : UDP 기반 QUIC 사용&lt;/p&gt;
 &lt;h2 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.whatap.io/ko/blog/149/&quot;&gt;https://www.whatap.io/ko/blog/149/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[📐 개츠비 이미지 width값 조정]]></title><description><![CDATA[…]]></description><link>https://saseungg.github.io/blog/image-style/</link><guid isPermaLink="false">https://saseungg.github.io/blog/image-style/</guid><pubDate>Mon, 06 Nov 2023 03:29:20 GMT</pubDate><content:encoded>&lt;p&gt;개인 블로그를 만들면서 가장 하고 싶었던 건 첨부하는 이미지의 스타일을 입히는 거였다. 이미지에 스타일을 주느냐 안주느냐에 따라 느낌이 확 달라진다.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://inf.run/8ZEU8&quot;&gt;모든 개발자를 위한 HTTP 웹 기본 지식 - 인프런 | 강의&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/HTTP/Overview&quot;&gt;HTTP 개요 - HTTP | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://joshua1988.github.io/web-development/http-part1/&quot;&gt;프런트엔드 개발자가 알아야하는 HTTP 프로토콜 Part 1 • 캡틴판교 블로그&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://joosjuliet.github.io/http/&quot;&gt;http의 개념(keep-alive, connectless, 응답 헤더, 요청 헤더) – JOOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[📐 개츠비 이미지 width값 조정]]></title><description><![CDATA[…]]></description><link>https://saseungg.github.io/blog/image-style/</link><guid isPermaLink="false">https://saseungg.github.io/blog/image-style/</guid><pubDate>Mon, 06 Nov 2023 03:29:20 GMT</pubDate><content:encoded>&lt;p&gt;개인 블로그를 만들면서 가장 하고 싶었던 건 첨부하는 이미지의 스타일을 입히는 거였다. 이미지에 스타일을 주느냐 안주느냐에 따라 느낌이 확 달라진다.
 그림을 예시를 두고 차이를 비교해보자.&lt;/p&gt;
 &lt;p&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;&gt;
@@ -649,7 +811,7 @@ REST API를 모킹하는 경우, msw 모듈의 rest 객체를 사용한다.&lt;/
   worker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이제 MSW가 정상적으로 동작하면 콘솔에 &lt;code class=&quot;language-text&quot;&gt;[MSW] Mocking enabled&lt;/code&gt; 라는 메시지가 표시된다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/saseungg/how-dns-works-translation/assets/115215178/f67e4b63-bfd6-4492-8332-dab6bcedea0f&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;md-figure&quot;&gt;&lt;img src=&quot;https://github.com/saseungg/how-dns-works-translation/assets/115215178/f67e4b63-bfd6-4492-8332-dab6bcedea0f&quot;&gt;&lt;figcaption&gt;image&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&quot;데이터-get-요청&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8D%B0%EC%9D%B4%ED%84%B0-get-%EC%9A%94%EC%B2%AD&quot; aria-label=&quot;데이터 get 요청 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;데이터 GET 요청&lt;/h3&gt;
 &lt;p&gt;간단하게 fetch를 이용해서 GET 요청을 보내보겠다. fetch로 데이터를 받아와서 콘솔에 출력하도록 작성하였다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/foods&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
