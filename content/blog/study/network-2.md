@@ -47,6 +47,7 @@ draft: false
 - 공개키 암호화 방식의 알고리즘은 계산이 느리다는 단점이 있다.
 
 ## SSL 통신 과정
+![](./network-2/ssl%20통신과정.jpeg)
 
 ## DNS
 - Domain Name System
@@ -81,6 +82,7 @@ draft: false
 - https://sarc.io/index.php/was/2087-https
 - https://www.youtube.com/watch?v=wPdH7lJ8jf0
 - https://kingofbackend.tistory.com/198#article-1--%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%9D%B4%EB%A6%84%EA%B3%BC-ip%EC%A3%BC%EC%86%8C%EB%A5%BC-%EC%84%9C%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94-%EC%97%AD%ED%95%A0%EC%9D%84-%ED%95%98%EB%8A%94-dns%EB%8A%94-%EC%99%9C-udp%EC%97%90-%EC%86%8D%ED%95%B4-%EC%9E%88%EC%9D%84%EA%B9%8C?
+- https://www.stevenjlee.net/2020/11/01/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-http-vs-https-%EA%B7%B8%EB%A6%AC%EA%B3%A0-ssl-secure-socket-layer/
 
 # 질문지
 ## HTTPS
