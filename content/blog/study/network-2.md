@@ -47,7 +47,7 @@ draft: false
 - 공개키 암호화 방식의 알고리즘은 계산이 느리다는 단점이 있다.
 
 ## SSL 통신 과정
-![](./network-2/ssl%20통신과정.jpeg)
+![](./network-2/ssl.jpeg)
 
 ## DNS
 - Domain Name System
