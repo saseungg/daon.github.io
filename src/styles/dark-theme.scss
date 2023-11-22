@@ -74,6 +74,9 @@ body.dark {
   }
 
   // header
+  .header-container {
+    border-color: $dark-border-color;
+  }
   .header {
     a {
       color: $dark-color;

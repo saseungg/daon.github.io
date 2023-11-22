@@ -74,6 +74,9 @@ body.light {
   }
 
   // header
+  .header-container {
+    border-color: $light-border-color;
+  }
   .header {
     a {
       color: $light-color;

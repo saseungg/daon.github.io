@@ -2,9 +2,10 @@
 
 .header-container {
   display: flex;
-  height: 70px;
+  height: 60px;
   justify-content: center;
   width: 100%;
+  border-bottom: 1px solid;
 
   @keyframes gradient {
     0% {
@@ -22,7 +23,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 663px;
+    max-width: 760px;
     width: 100%;
     font-family: GmarketSansBold;
   }
