@@ -2,7 +2,7 @@
 title: '🌐 네트워크 스터디 4주차'
 date: 2023-11-29 22:30:00
 category: 'Study'
-draft: false
+draft: true
 ---
 
 ## IP 주소

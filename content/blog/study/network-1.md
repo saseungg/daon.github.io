@@ -2,7 +2,7 @@
 title: '🌐 네트워크 스터디 1주차'
 date: 2023-11-08 16:21:13
 category: 'Study'
-draft: false
+draft: true
 ---
 
 ## HTTP (HyperText Transfer Protocol)

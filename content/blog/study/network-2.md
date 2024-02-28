@@ -2,7 +2,7 @@
 title: '🌐 네트워크 스터디 2주차'
 date: 2023-11-15 19:28:00
 category: 'Study'
-draft: false
+draft: true
 ---
 
 ## HTTPS

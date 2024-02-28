@@ -2,7 +2,7 @@
 title: '🌐 네트워크 스터디 5주차'
 date: 2023-12-06 20:38:00
 category: 'Study'
-draft: false
+draft: true
 ---
 
 ### 쿠키와 세션
