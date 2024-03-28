@@ -1,8 +1,8 @@
 ---
-title: '🤖 Github Actions을 통한 배포 자동화'
+title: 'Github Actions을 통한 배포 자동화'
 date: 2023-10-30 13:04:30
-category: 'Tip'
-draft: false
+category: 'etc'
+draft: true
 ---
 
 Github Actions는 워크플로를 자동화하는 도구로, YAML 파일을 사용하여 빌드, 테스트, 배포 등 다양한 작업을 자동화할 수 있다.

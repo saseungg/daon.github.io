@@ -1,8 +1,8 @@
 ---
-title: '📐 개츠비 이미지 width값 조정'
+title: '개츠비 이미지 width값 조정'
 date: 2023-11-06 03:29:20
-category: 'Blog'
-draft: false
+category: 'etc'
+draft: true
 ---
 
 개인 블로그를 만들면서 가장 하고 싶었던 건 첨부하는 이미지의 스타일을 입히는 거였다. 이미지에 스타일을 주느냐 안주느냐에 따라 느낌이 확 달라진다.

@@ -1,7 +1,7 @@
 ---
-title: '포텐데이 회고'
+title: '해커톤 참여해서 네이버 클라우드에서 상까지 받고온 후기'
 date: 2023-12-24 20:41:15
-category: '회고'
+category: 'Retro'
 draft: false
 ---
 
